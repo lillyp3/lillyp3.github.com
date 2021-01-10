@@ -1,15 +1,43 @@
 body {
     width: 1200px;
     height: 800px;
-    margin: 50px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Asap', sans-serif;
 
 }
 
 #banner {
     width: 800px;
     height: 250px;
+    background-color: pink;
 }
+
 
 ul {
     list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+section {
+    padding: 75px;
+    padding-top: 20px;
+    padding-left: 50px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
