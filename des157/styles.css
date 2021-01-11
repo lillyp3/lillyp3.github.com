@@ -9,6 +9,7 @@ body {
 header {
     margin-left: 180px;
     color: #6479B7;
+    line-height: 20px;
 }
 
 
@@ -128,6 +129,10 @@ a:hover {
     color: pink;
 }
 
+h2{
+    line-height: .5;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -137,7 +142,7 @@ ul {
 
 section {
     width: 200px;
-    padding: 75px;
+    padding: 60px;
     padding-top: 20px;
     padding-left: 50px;
     margin: 10px;
@@ -161,5 +166,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    spacing: 10px;
 }
+
 
