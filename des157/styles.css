@@ -57,21 +57,21 @@ header {
 }
 
 #first-circle {
-    width: 70px;
+    /* width: 70px;
     height: 70px;
     background-color: white;
-    border: 3px solid white;
+    border: 3px solid white; */
     border-radius: 50%;
     position: absolute;
-    bottom: 18px;
+    bottom: 35px;
     left: 60px;
     z-index: +1;
-    animation: animation1 600ms ease-out infinite alternate;
+    animation: animation1 1500ms ease-in-out infinite alternate;
 }
 
 
 @keyframes animation1 {
-    from { bottom: 18px;}
+    from { bottom: 35px;}
     to { bottom: 130px;}
 }
 
@@ -91,21 +91,21 @@ header {
 }
 
 #middle-circle {
-    width: 70px;
+    /* width: 70px;
     height: 70px;
     background-color: white;
-    border: 3px solid white;
+    border: 3px solid white; */
     border-radius: 50%;
     position: absolute;
-    bottom: 18px;
+    bottom: 35px;
     left: 375px;
     z-index: +1;
-    animation: animation1 600ms ease-out infinite alternate;
+    animation: animation1 1500ms ease-in-out infinite alternate;
 }
 
 
 @keyframes animation1 {
-    from { bottom: 18px;}
+    from { bottom: 35px;}
     to { bottom: 130px;}
 }
 
