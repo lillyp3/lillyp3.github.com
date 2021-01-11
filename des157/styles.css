@@ -30,14 +30,14 @@ header {
     border: 3px solid rgb(255, 110, 115);
     border-radius: 50%;
     position: absolute;
-    bottom: 18px;
+    bottom: 0px;
     right: 60px;
     z-index: +1;
     animation: animation1 600ms ease-out infinite alternate;
 }
 
 @keyframes animation1 {
-    from { bottom: 18px;}
+    from { bottom: 0px;}
     to { bottom: 130px;}
 }
 
@@ -124,6 +124,13 @@ header {
     left: 375px;
 }
 
+#lightning {
+    position: absolute;
+    top: 18px;
+    left: 200px;
+    z-index: +1;
+}
+
 #banner:hover {
     cursor: pointer;
     background-color: rgb(160, 184, 255);
@@ -131,6 +138,7 @@ header {
     transition-duration: 1.5s;
 
 }
+
 
 a {
     text-decoration: none;
