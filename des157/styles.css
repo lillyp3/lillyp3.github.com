@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    margin-left: 150px;
+    margin-left: 180px;
     color: #6479B7;
 }
 
@@ -17,6 +17,7 @@ header {
     height: 250px;
     background-color: white;
     border: 5px solid pink;
+    border-radius: 10px;
     position: relative;
     
 }
@@ -24,44 +25,95 @@ header {
 #circle {
     width: 70px;
     height: 70px;
-    background-color: #F69094;
-    border: 3px solid #F69094;
+    background-color: rgb(255, 110, 115);
+    border: 3px solid rgb(255, 110, 115);
     border-radius: 50%;
     position: absolute;
     bottom: 18px;
-    right: 40px;
+    right: 60px;
     z-index: +1;
     animation: animation1 600ms ease-out infinite alternate;
 }
-
-/*
-#circle:hover {
-    animation: animation1 500ms ease-out infinite alternate;
-} 
-*/
 
 @keyframes animation1 {
     from { bottom: 18px;}
     to { bottom: 130px;}
 }
 
-
 #shadow {
     width: 70px;
     height: 8px;
-    background-color: #6479B7;
-    border: 3px solid #6479B7;
+    background-color: rgb(70, 92, 158);
+    border: 3px solid rgb(70, 92, 158);
     border-radius: 80%;
     position: absolute;
     bottom: 12px;
-    right: 40px;
+    right: 60px;
+}
+
+#first-circle {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 18px;
+    left: 60px;
+    z-index: +1;
+    animation: animation1 600ms ease-out infinite alternate;
 }
 
 
+@keyframes animation1 {
+    from { bottom: 18px;}
+    to { bottom: 130px;}
+}
+
+#shadow-one {
+    width: 70px;
+    height: 8px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 80%;
+    position: absolute;
+    bottom: 12px;
+    left: 60px;
+}
+
+#middle-circle {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 18px;
+    left: 375px;
+    z-index: +1;
+    animation: animation1 600ms ease-out infinite alternate;
+}
+
+
+@keyframes animation1 {
+    from { bottom: 18px;}
+    to { bottom: 130px;}
+}
+
+#shadow-two {
+    width: 70px;
+    height: 8px;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 80%;
+    position: absolute;
+    bottom: 12px;
+    left: 375px;
+}
 
 #banner:hover {
     cursor: pointer;
-    background-color: #C1D3F5;
+    background-color: rgb(160, 184, 255);
     transition-property: background-color;
     transition-duration: 1.5s;
 
@@ -84,11 +136,13 @@ ul {
 }
 
 section {
+    width: 200px;
     padding: 75px;
     padding-top: 20px;
     padding-left: 50px;
     margin: 10px;
     border: 2px solid pink;
+    border-radius: 10px;
     color: #6479B7;
 }
 
