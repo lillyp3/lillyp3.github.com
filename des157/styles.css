@@ -71,6 +71,12 @@ header {
     to { bottom: 130px;}
 }
 
+#first-circle:hover {
+    background-color: rgb(255, 110, 115);
+    border: 3px solid rgb(255, 110, 115);
+    animation: animation1 200ms ease-out infinite alternate;
+}
+
 #shadow-one {
     width: 70px;
     height: 8px;
@@ -99,6 +105,12 @@ header {
 @keyframes animation1 {
     from { bottom: 18px;}
     to { bottom: 130px;}
+}
+
+#middle-circle:hover {
+    background-color: rgb(255, 110, 115);
+    border: 3px solid rgb(255, 110, 115);
+    animation: animation1 300ms ease-out infinite alternate;
 }
 
 #shadow-two {
@@ -166,7 +178,6 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    spacing: 10px;
 }
 
 
