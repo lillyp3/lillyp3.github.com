@@ -9,7 +9,7 @@ body {
 header {
     margin-left: 180px;
     color: #6479B7;
-    line-height: 30px;
+    line-height: 20px;
 } 
 
 header h2{
@@ -23,8 +23,7 @@ header h2{
     background-color: white;
     border: 5px solid pink;
     border-radius: 10px;
-    position: relative;
-    
+    position: relative;  
 }
 
 #circle {
@@ -46,7 +45,6 @@ header h2{
 }
 
 #circle:hover {
-    /* animation: animation1 300ms ease-out infinite alternate; */
     transform: rotate(360deg);
     transition-duration: .7s;
 }
@@ -63,10 +61,6 @@ header h2{
 }
 
 #first-circle {
-    /* width: 70px;
-    height: 70px;
-    background-color: white;
-    border: 3px solid white; */
     border-radius: 50%;
     position: absolute;
     bottom: 35px;
@@ -74,12 +68,6 @@ header h2{
     z-index: +1;
     animation: animation2 1500ms ease-in-out infinite alternate;
 }
-
-/*
-@keyframes animation2 {
-    from { bottom: 35px;}
-    to { bottom: 130px;}
-} */
 
 #first-circle:hover {
     opacity: 0;
@@ -98,10 +86,6 @@ header h2{
 }
 
 #middle-circle {
-    /* width: 70px;
-    height: 70px;
-    background-color: white;
-    border: 3px solid white; */
     border-radius: 50%;
     position: absolute;
     bottom: 35px;
@@ -111,15 +95,11 @@ header h2{
 }
 
 
-@keyframes animation2 {
-    from { bottom: 60px;}
-    to { bottom: 130px;}
-}
-
 #middle-circle:hover {
     opacity: 0;
     transition-duration: .75s;
 }
+
 
 #shadow-two {
     width: 70px;
@@ -132,15 +112,17 @@ header h2{
     left: 375px;
 }
 
+@keyframes animation2 {
+    from { bottom: 60px;}
+    to { bottom: 130px;}
+}
 
 #banner:hover {
     cursor: pointer;
     background-color: rgb(160, 184, 255);
     transition-property: background-color;
     transition-duration: 1.5s;
-
 }
-
 
 a {
     text-decoration: none;
@@ -151,7 +133,7 @@ a:hover {
     color: pink;
 }
 
-h2{
+section h2{
     line-height: .05;
 }
 
@@ -176,7 +158,7 @@ section {
 }
 
 .middle {
-   padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .row {
