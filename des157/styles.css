@@ -9,7 +9,7 @@ body {
 header {
     margin-left: 180px;
     color: #6479B7;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 
@@ -24,20 +24,20 @@ header {
 }
 
 #circle {
-    width: 70px;
+    /* width: 70px;
     height: 70px;
     background-color: rgb(255, 110, 115);
-    border: 3px solid rgb(255, 110, 115);
-    border-radius: 50%;
+    border: 3px solid rgb(255, 110, 115); 
+    border-radius: 50%; */
     position: absolute;
-    bottom: 0px;
-    right: 60px;
+    bottom: 33px;
+    right: 50px;
     z-index: +1;
     animation: animation1 600ms ease-out infinite alternate;
 }
 
 @keyframes animation1 {
-    from { bottom: 0px;}
+    from { bottom: 33px;}
     to { bottom: 130px;}
 }
 
@@ -52,7 +52,7 @@ header {
     border: 3px solid rgb(70, 92, 158);
     border-radius: 80%;
     position: absolute;
-    bottom: 12px;
+    bottom: 30px;
     right: 60px;
 }
 
@@ -66,14 +66,14 @@ header {
     bottom: 35px;
     left: 60px;
     z-index: +1;
-    animation: animation1 1500ms ease-in-out infinite alternate;
+    animation: animation2 1500ms ease-in-out infinite alternate;
 }
 
-
-@keyframes animation1 {
+/*
+@keyframes animation2 {
     from { bottom: 35px;}
     to { bottom: 130px;}
-}
+} */
 
 #first-circle:hover {
     opacity: 0;
@@ -86,7 +86,7 @@ header {
     border: 3px solid white;
     border-radius: 80%;
     position: absolute;
-    bottom: 12px;
+    bottom: 30px;
     left: 60px;
 }
 
@@ -100,12 +100,12 @@ header {
     bottom: 35px;
     left: 375px;
     z-index: +1;
-    animation: animation1 1500ms ease-in-out infinite alternate;
+    animation: animation2 1500ms ease-in-out infinite alternate;
 }
 
 
-@keyframes animation1 {
-    from { bottom: 35px;}
+@keyframes animation2 {
+    from { bottom: 60px;}
     to { bottom: 130px;}
 }
 
@@ -120,16 +120,10 @@ header {
     border: 3px solid white;
     border-radius: 80%;
     position: absolute;
-    bottom: 12px;
+    bottom: 30px;
     left: 375px;
 }
 
-#lightning {
-    position: absolute;
-    top: 18px;
-    left: 200px;
-    z-index: +1;
-}
 
 #banner:hover {
     cursor: pointer;
@@ -182,6 +176,8 @@ section {
     flex-flow: row wrap;
     justify-content: center;
     margin: 50px;
+    margin-bottom: 0;
+    margin-top: 30px;
 }
 
 footer {
@@ -190,5 +186,6 @@ footer {
     justify-content: space-evenly;
 
 }
+
 
 
