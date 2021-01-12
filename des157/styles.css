@@ -10,8 +10,12 @@ header {
     margin-left: 180px;
     color: #6479B7;
     line-height: 30px;
-}
+} 
 
+header h2{
+    color: rgb(134, 154, 214);
+    font-size: 20px;
+}
 
 #banner {
     width: 800px;
@@ -30,19 +34,21 @@ header {
     border: 3px solid rgb(255, 110, 115); 
     border-radius: 50%; */
     position: absolute;
-    bottom: 33px;
+    bottom: 31px;
     right: 50px;
     z-index: +1;
     animation: animation1 600ms ease-out infinite alternate;
 }
 
 @keyframes animation1 {
-    from { bottom: 33px;}
+    from { bottom: 31px;}
     to { bottom: 130px;}
 }
 
 #circle:hover {
-    animation: animation1 300ms ease-out infinite alternate;
+    /* animation: animation1 300ms ease-out infinite alternate; */
+    transform: rotate(360deg);
+    transition-duration: .7s;
 }
 
 #shadow {
@@ -77,6 +83,7 @@ header {
 
 #first-circle:hover {
     opacity: 0;
+    transition-duration: .75s;
 }
 
 #shadow-one {
@@ -111,6 +118,7 @@ header {
 
 #middle-circle:hover {
     opacity: 0;
+    transition-duration: .75s;
 }
 
 #shadow-two {
@@ -183,8 +191,13 @@ section {
 footer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 
+}
+
+footer p{
+    padding: 30px;
+    padding-top: 5px;
 }
 
 
