@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experiment 1</title>
+</head>
+<body>
+    
+    <h1>Experiment 1</h1>
+
+    <p id="first">This is a paragraph</p>
+    <p id="second">This is a paragraph</p>
+    <p id="third">This is a paragraph</p>
+    <p><a href="">Paragraph with a link</a></p>
+    <script>
+    
+    var eyeSight = prompt("Is you eyesight good or bad?", "");
+    var colorBlind = prompt("Are you colorblind, yes or no?", "");
+    var colors = ["green", "red", "blue", "pink"];
+
+
+    function font(eyeSight){
+        var myParagraphs = document.getElementsByTagName("p");
+
+        if (eyeSight == "bad"){
+            for (var i=0; i < myParagraphs.length; i++) {
+			    myParagraphs[i].style.fontSize = "50px";
+            }
+		}
+
+        else {
+            for (var i=0; i < myParagraphs.length; i++) {
+			    myParagraphs[i].style.fontSize = "11px";
+            }
+        }
+    }
+
+    font(eyeSight);
+
+    </script>
+
+</body>
+</html>
