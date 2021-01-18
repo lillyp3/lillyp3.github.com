@@ -27,7 +27,7 @@
 
         if (eyeSight == "bad"){
             for (var i=0; i < myParagraphs.length; i++) {
-			    myParagraphs[i].style.fontSize = "50px";
+			    myParagraphs[i].style.fontSize = "60px";
             }
 		}
 
@@ -53,6 +53,10 @@
 
         if (colorBlind == "no"){ 
             text.style.color = colors[number];
+        }
+
+        else{
+            unLink(number);
         }
     }
 
