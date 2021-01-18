@@ -12,65 +12,69 @@
 
     <!-- Enlarges the text if the user has bad eyesight, makes it smaller if they have good eyesight. Also if the user is not colorblind font color changes -->
 
-    <p id="first">This is a paragraph</p>
+    <p id="first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+        culpa qui officia deserunt mollit anim id est laborum.</p>
+
     <p id="second">This is a paragraph</p>
     <p id="third">This is a paragraph</p>
     <p><a href="">Paragraph with a link</a></p>
     <script>
     
-    var eyeSight = prompt("Is you eyesight good or bad?", "");
-    var colorBlind = prompt("Are you colorblind, yes or no?", "");
+        var eyeSight = prompt("Is you eyesight good or bad?", "");
+        var colorBlind = prompt("Are you colorblind, yes or no?", "");
 
 
-    function font(eyeSight){
-        var myParagraphs = document.getElementsByTagName("p");
+        function font(eyeSight){
+            var myParagraphs = document.getElementsByTagName("p");
 
-        if (eyeSight == "bad"){
-            for (var i=0; i < myParagraphs.length; i++) {
-			    myParagraphs[i].style.fontSize = "60px";
+            if (eyeSight == "bad" || eyeSight == "Bad"){
+                for (var i=0; i < myParagraphs.length; i++) {
+			        myParagraphs[i].style.fontSize = "60px";
+                }
+		    }
+
+            else {
+                for (var i=0; i < myParagraphs.length; i++) {
+			        myParagraphs[i].style.fontSize = "11px";
+                }
             }
-		}
+        }
 
-        else {
-            for (var i=0; i < myParagraphs.length; i++) {
-			    myParagraphs[i].style.fontSize = "11px";
+        function randomNumber(min, max){
+            var numOfValues = max - min + 1;
+            var randomNum = Math.random();
+            var randomVal = randomNum * numOfValues;
+            var roundedRandomVal = Math.floor(randomVal);
+            var finalNum = roundedRandomVal + min; 
+            return finalNum;
+        }
+
+        function colorChange(colorBlind, number){
+            var text = document.querySelector("#first");
+            var colors = ["green", "red", "blue", "pink"];
+
+            if (colorBlind == "no" || colorBlind == "No"){ 
+                text.style.color = colors[number];
+            }
+
+            else{
+                unLink(number);
             }
         }
-    }
 
-    function randomNumber(min, max){
-        var numOfValues = max - min + 1;
-        var randomNum = Math.random();
-        var randomVal = randomNum * numOfValues;
-        var roundedRandomVal = Math.floor(randomVal);
-        var finalNum = roundedRandomVal + min; 
-        return finalNum;
-    }
-
-    function colorChange(colorBlind, number){
-        var text = document.querySelector("#first");
-        var colors = ["green", "red", "blue", "pink"];
-
-        if (colorBlind == "no"){ 
-            text.style.color = colors[number];
+        function unLink(number){
+            if (number > 1){
+                var link = document.querySelector("a");
+                link.innerHTML = "<a>This is not a link</a>";
+                return number;
+            }
         }
 
-        else{
-            unLink(number);
-        }
-    }
 
-    function unLink(number){
-        if (number > 1){
-            var link = document.querySelector("a");
-            link.innerHTML = "<a>This is not a link</a>";
-            return number;
-        }
-    }
-
-
-    font(eyeSight);
-    colorChange(colorBlind, randomNumber(0, 3));
+        font(eyeSight);
+        colorChange(colorBlind, randomNumber(0, 3));
 
     </script>
 
