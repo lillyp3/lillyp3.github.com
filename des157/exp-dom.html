@@ -52,23 +52,16 @@
         if (colorBlind == "no"){ 
             text.style.color = colors[number];
         }
-
-        else {
-            return unLink(number);
-        }
     }
 
     function unLink(number){
         if (number > 1){
-            var link = document.getElementByTagName("a");
-            link.innerHTML = "<a> This is not a link </a>";
-            return number;
-        }
-
-        else {
+            var link = document.querySelector("a");
+            link.innerHTML = "<a>This is not a link</a>";
             return number;
         }
     }
+
 
     font(eyeSight);
     colorChange(colorBlind, randomNumber(0, 3));
