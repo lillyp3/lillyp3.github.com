@@ -7,38 +7,41 @@ body {
 }
 
 header{
-    display: flex;
-    flex-flow: row wrap;
+    padding-left: 30px;
 }
 
 h1{
-    font-size: 90px;
-    padding-top: 200px;
-    color: rgb(255, 94, 121);
+    font-size: 70px;
+    /* padding-top: 200px; */
+    color: rgb(75, 26, 190);
 }
 
 
+
 main{
-    border: 4px solid pink;
-    border-radius: 20px;
+    /* border: 4px solid rgb(255, 130, 174);
+    border-radius: 20px; */
     height: 500px;
     
 }
 
 h2{
-    color: rgb(255, 94, 121);
+    color: rgb(75, 26, 190);
 } 
 
 article {
-    padding: 70px;
+    padding: 40px;
     padding-top: 20px;
-    background-color: rgb(252, 220, 226);
+    /* background-color: rgb(252, 220, 226); */
     border-radius: 10px;
     margin: 30px;
+    border: 4px solid rgb(255, 130, 174);
+    border-radius: 20px;
 }
 
 a {
     text-decoration: none;
+    color: rgb(255, 130, 174);
 }
 
 footer {
@@ -51,4 +54,10 @@ footer {
 footer p{
     padding: 30px;
     padding-top: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }
