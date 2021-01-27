@@ -1,23 +1,24 @@
 (function(){
     "use strict";
 
-    var myForm = document.querySelector("#myform");
-    var madlib = document.querySelector("#madlib");
+    let myForm = document.querySelector("#myform");
+    let madlib = document.querySelector("#madlib");
 
     myForm.addEventListener("submit", function(event){
         event.preventDefault();
-        var noun1 = document.querySelector("#noun1").value;
-        var noun2 = document.querySelector("#noun2").value;
-        var adj = document.querySelector("#adj").value;
-        var verb = document.querySelector("#verb").value;
+        let noun1 = document.querySelector("#noun1").value;
+        let noun2 = document.querySelector("#noun2").value;
+        let adj = document.querySelector("#adj").value;
+        let verb = document.querySelector("#verb").value;
 
-        if (noun1 && noun2 && adj && verb){ //add with each now input
-            var myText = `Here are the words: ${noun1}, ${noun2}, ${adj}, and ${verb}`;
+/*         if (noun1 && noun2 && adj && verb){ //add with each now input
+            let myText = `Here are the words: ${noun1}, ${noun2}, ${adj}, and ${verb}`;
         }
         else{
-            var myText = "Please fill out all the boxes";
-        }
+            let myText = "Please fill out all the boxes";
+        } */
 
+        let myText = `Here are the words: ${noun1}, ${noun2}, ${adj}, and ${verb}`;
         madlib.innerHTML = myText;
         
     });
