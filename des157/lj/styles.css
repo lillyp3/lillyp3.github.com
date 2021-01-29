@@ -4,7 +4,7 @@ body {
     margin: auto;
     margin-top: 50px;
     padding-top: 130px;
-    font-family: 'Comfortaa';
+    font-family: 'Merriweather', serif;
     position: relative;
 }
 
@@ -35,8 +35,8 @@ main{
 
 h2{
     color: rgb(75, 26, 190);
-    font-size: 30px;
-    font-family: 'Comfortaa';
+    font-size: 32px;
+    font-family: 'Merriweather', serif;
 } 
 
 article {
@@ -71,6 +71,11 @@ footer {
 footer p{
     padding: 30px;
     padding-top: 5px;
+}
+
+a:hover{
+    color: rgb(75, 26, 190);
+    font-weight: 900;
 }
 
 #date {
