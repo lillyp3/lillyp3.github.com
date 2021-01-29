@@ -16,10 +16,17 @@ h2 {
 main {
     display: flex;
     flex-flow: row-wrap;
+    justify-content: center;
+    position: relative;
+}
+
+img{
+    padding-right: 100px;
 }
 
 form {
-    width: 600px;
+    width: 500px;
+    height: 600px;
     padding: 30px;
     border: solid 2px #ff4d4d;
     border-radius: 20px;
@@ -31,4 +38,17 @@ input {
     border: solid 1.5px;
     border-radius: 5px;
     color: #f9a0a0;
+}
+
+footer {
+    display: flex;
+    flex-flow: row-wrap;
+    right: 180px;
+    position: absolute;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff4d4d;
+    padding-right: 30px;
 }

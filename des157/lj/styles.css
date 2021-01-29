@@ -3,11 +3,19 @@ body {
     height: 768px;
     margin: auto;
     margin-top: 50px;
-    font-family: 'Asap', sans-serif;
+    padding-top: 130px;
+    font-family: 'Comfortaa';
+    position: relative;
 }
 
 header{
     padding-left: 30px;
+}
+
+img {
+    right: 50px;
+    top: 26px;
+    position: absolute;
 }
 
 h1{
@@ -27,6 +35,8 @@ main{
 
 h2{
     color: rgb(75, 26, 190);
+    font-size: 30px;
+    font-family: 'Comfortaa';
 } 
 
 article {
@@ -36,9 +46,10 @@ article {
     border-radius: 10px;
     margin: 30px;
     /* border: 4px solid rgb(255, 130, 174); */
-    border: 4px solid rgb(194, 194, 194);
+    border: 4px solid rgba(194, 194, 194, 0.432);
     /* border: 4px solid rgb(75, 26, 190); */
     border-radius: 20px;
+    font-family: 'Asap', sans-serif;
 }
 
 .text{
@@ -60,5 +71,9 @@ footer {
 footer p{
     padding: 30px;
     padding-top: 5px;
+}
+
+#date {
+    color: rgb(151, 148, 148);
 }
 
