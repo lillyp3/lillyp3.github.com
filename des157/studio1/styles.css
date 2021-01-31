@@ -76,7 +76,7 @@ input {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: column;
-    right: 180px;
+    right: 193px;
     position: absolute;
 }
 
@@ -106,8 +106,4 @@ footer a {
 
     visibility: showing;
     opacity: 1;
-}
-
-#one {
-    background-color: #f9a0a0;
 }

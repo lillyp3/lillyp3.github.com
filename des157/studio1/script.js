@@ -39,6 +39,12 @@
         document.getElementById("myform").className = "hidden";
     });
 
+    document.querySelector(".close").addEventListener("click", function(event){
+        event.preventDefault();
+        document.getElementById("madlib").className = "hidden";
+        document.getElementById("myform").className = "showing";
+    });
+
 
 
 }());
