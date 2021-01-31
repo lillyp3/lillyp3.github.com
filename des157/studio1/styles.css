@@ -32,12 +32,10 @@ form {
     margin-top: 70px;
     border: solid 2px #ff4d4d;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: column;
     position: relative;
 }
-
 
 label{
     margin-bottom: 10px;
@@ -78,6 +76,43 @@ input {
     flex-flow: column;
     right: 193px;
     position: absolute;
+}
+
+#question {
+    background-color: #f9a0a0;
+    color: white;
+    font-weight: 700;
+    margin: 5px;
+    padding-left: 10px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#answer1 {
+    border: solid 2px #f9a0a0;
+    border-radius: 10px;;
+    font-weight: 700;
+    margin: 5px;
+    margin-left: 40%;
+    padding-left: 10px; 
+}
+
+#answer2 {
+    border: solid 2px #f9a0a0;
+    border-radius: 10px;;
+    font-weight: 700;
+    margin: 5px;
+    margin-left: 40%;
+    padding-left: 10px; 
+}
+
+#answer3 {
+    border: solid 2px #f9a0a0;
+    border-radius: 10px;;
+    font-weight: 700;
+    margin: 5px;
+    margin-left: 40%;
+    padding-left: 10px; 
 }
 
 footer {

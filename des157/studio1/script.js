@@ -28,10 +28,16 @@
     });
 
     function makeMadlib(wordsArray){
-        let myText = `Here are the words: ${words[0]}, ${words[1]}, ${words[2]}, ${words[3]}, and ${words[4]}, ${words[5]} ${words[6]}`;
-        madlib.innerHTML = myText;
-    }
+        let myText = `Nice to meet you too! Please excuse my ${words[0]} I was nervous for the date.`;
+        answer1.innerHTML = myText;
 
+        let myText2 = `I like watching ${words[1]} ${words[2]} ${words[3]}.`;
+        answer2.innerHTML = myText2;
+
+        let myText3 = `I make my own ${words[4]}. Personally, I think it is ${words[5]}. Sorry I’ve been ${words[6]} a lot, how about you?`;
+        answer3.innerHTML = myText3;
+
+    }
     
     document.querySelector(".open").addEventListener("click", function(event){
         event.preventDefault();
