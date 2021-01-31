@@ -38,6 +38,7 @@ form {
     position: relative;
 }
 
+
 label{
     margin-bottom: 10px;
     font-weight: 600;
@@ -60,6 +61,7 @@ input {
     right: 40px;
     bottom: 5px;
     position: absolute;
+    cursor: pointer;
 }
 
 footer {
@@ -74,4 +76,18 @@ footer a {
     text-decoration: none;
     color: #ff4d4d;
     padding-right: 30px;
+}
+
+.hidden {
+    /* display: none; */
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    /* display: block; */
+
+    visibility: showing;
+    opacity: 1;
 }
