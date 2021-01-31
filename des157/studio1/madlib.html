@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Build Mad Lib Script</title>
+    <title>Bad First Date</title>
 
     <!-- Normalize script-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
@@ -30,18 +30,21 @@
         <!-- Add the form -->
         <form id="myform">
             <label for="noun1">Provide a Noun</label>
-            <input type="text" id="noun1">
+            <input type="text" id="noun1" required>
 
             <label for="noun2">Provide a Noun</label>
-            <input type="text" id="noun2">
+            <input type="text" id="noun2" required>
 
             <label for="adj">Provide an Adjective</label>
-            <input type="text" id="adj">
+            <input type="text" id="adj" required>
 
             <label for="verb">Provide a Verb</label>
-            <input type="text" id="verb">
+            <input type="text" id="verb" required>
 
-            <input type="submit" value="Send">
+            <label for="verb2">Provide a Verb</label>
+            <input type="text" id="verb2" required>
+
+            <input type="submit" value="Send" id="button">
         </form>
 
         <article id="madlib"></article>
