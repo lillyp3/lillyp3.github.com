@@ -26,6 +26,12 @@
             makeMadlib(words); 
         }
     });
+
+    function makeMadlib(wordsArray){
+        let myText = `Here are the words: ${words[0]}, ${words[1]}, ${words[2]}, ${words[3]}, and ${words[4]}, ${words[5]} ${words[6]}`;
+        madlib.innerHTML = myText;
+    }
+
     
     document.querySelector(".open").addEventListener("click", function(event){
         event.preventDefault();
@@ -33,9 +39,6 @@
         document.getElementById("myform").className = "hidden";
     });
 
-    function makeMadlib(wordsArray){
-        let myText = `Here are the words: ${words[0]}, ${words[1]}, ${words[2]}, ${words[3]}, and ${words[4]}, ${words[5]} ${words[6]}`;
-        madlib.innerHTML = myText;
-    }
+
 
 }());
