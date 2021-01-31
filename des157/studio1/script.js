@@ -4,6 +4,9 @@
 
     let myForm = document.querySelector("#myform");
     let madlib = document.querySelector("#madlib");
+    let answer1 = document.querySelector("#answer1")
+    let answer2 = document.querySelector("#answer2")
+    let answer3 = document.querySelector("#answer3")
     let words = [];
 
     myForm.addEventListener("submit", function(event){
