@@ -4,24 +4,31 @@
 
     let myForm = document.querySelector("#myform");
     let madlib = document.querySelector("#madlib");
+    let words = [];
 
     myForm.addEventListener("submit", function(event){
         event.preventDefault();
-        let noun1 = document.querySelector("#noun1").value;
-        let noun2 = document.querySelector("#noun2").value;
-        let adj = document.querySelector("#adj").value;
-        let verb = document.querySelector("#verb").value;
-        let verb2 = document.querySelector("#verb2").value;
-
-/*         if (noun1 && noun2 && adj && verb){ //add with each now input
-            let myText = `Here are the words: ${noun1}, ${noun2}, ${adj}, and ${verb}`;
+        let formData = document.querySelectorAll("input[type=text]");
+        let emptyFields = 0;
+        for (let eachWord of formData){
+            if (eachWord.value){
+                words.push(eachWord.value);
+                eachWord.value = "";
+            }
+            else{
+                emptyFields++;
+            }
+        }
+        if (emptyFields > 0){
+            madlib.innterHTML = "Please fill out the fields";
         }
         else{
-            let myText = "Please fill out all the boxes";
-        } */
-
-        let myText = `Here are the words: ${noun1}, ${noun2}, ${adj}, ${verb}, and ${verb2}`;
-        madlib.innerHTML = myText;
-        
+            makeMadlib(words); 
+        }
     });
+
+    function makeMadlib(wordsArray){
+        let myText = `Here are the words: ${words[0]}, ${words[1]}, ${words[2]}, ${words[3]}, and ${words[4]}, ${words[5]} ${words[6]}`;
+        madlib.innerHTML = myText;
+    }
 }());
