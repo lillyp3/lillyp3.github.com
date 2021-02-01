@@ -4,13 +4,14 @@
 
     let myForm = document.querySelector("#myform");
     let madlib = document.querySelector("#madlib");
-    let one = document.querySelector("#answer1")
-    let two = document.querySelector("#answer2")
-    let three = document.querySelector("#answer3")
+    let one = document.querySelector("#answer1");
+    let two = document.querySelector("#answer2");
+    let three = document.querySelector("#answer3");
     let words = [];
 
     /* takes the input from form and passes to Madlib */
-    myform.addEventListener("submit", function(event){
+    myForm.addEventListener("submit", function(event){
+        console.log("makeMadlibs");
         event.preventDefault();
         let formData = document.querySelectorAll("input[type=text]");
         for (let eachWord of formData){
@@ -22,6 +23,7 @@
 
     /* Adds words to madlib */
     function makeMadlib(wordsArray){
+        console.log("makeMadlibs");
         let myText = `Nice to meet you too! Please excuse my ${wordsArray[0]} I was nervous for the date.`;
         one.innerHTML = myText;
 
@@ -35,16 +37,16 @@
     
     /* When you click submit, it shows the madlib */
     document.querySelector(".open").addEventListener("click", function(event){
-        event.preventDefault();
+        /* event.preventDefault(); */
         document.getElementById("madlib").className = "showing";
         document.getElementById("myform").className = "hidden";
     });
 
     /* When you click refresh, it shows the form */
     document.querySelector(".close").addEventListener("click", function(event){
-        event.preventDefault();
+        /* event.preventDefault(); */
         document.getElementById("madlib").className = "hidden";
         document.getElementById("myform").className = "showing";
-    });
+    }); 
 
 }());
