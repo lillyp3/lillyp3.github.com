@@ -63,7 +63,7 @@ input {
 }
 
 #madlib {
-    background-color: #f9a0a0;
+    background-color: #ffffff;
     width: 500px;
     height: 600px;
     padding: 30px;
@@ -71,7 +71,6 @@ input {
     margin-top: 70px;
     border: solid 2px #ff4d4d;
     border-radius: 20px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: column;
     right: 193px;
@@ -95,6 +94,7 @@ input {
     margin: 5px;
     margin-left: 40%;
     padding-left: 10px; 
+    color: #f9a0a0;
 }
 
 #answer2 {
@@ -104,6 +104,7 @@ input {
     margin: 5px;
     margin-left: 40%;
     padding-left: 10px; 
+    color: #f9a0a0;
 }
 
 #answer3 {
@@ -113,6 +114,7 @@ input {
     margin: 5px;
     margin-left: 40%;
     padding-left: 10px; 
+    color: #f9a0a0;
 }
 
 footer {

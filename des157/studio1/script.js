@@ -4,56 +4,47 @@
 
     let myForm = document.querySelector("#myform");
     let madlib = document.querySelector("#madlib");
-    let answer1 = document.querySelector("#answer1")
-    let answer2 = document.querySelector("#answer2")
-    let answer3 = document.querySelector("#answer3")
+    let one = document.querySelector("#answer1")
+    let two = document.querySelector("#answer2")
+    let three = document.querySelector("#answer3")
     let words = [];
 
-    myForm.addEventListener("submit", function(event){
+    /* takes the input from form and passes to Madlib */
+    myform.addEventListener("submit", function(event){
         event.preventDefault();
         let formData = document.querySelectorAll("input[type=text]");
-        let emptyFields = 0;
         for (let eachWord of formData){
-            if (eachWord.value){
                 words.push(eachWord.value);
                 eachWord.value = "";
             }
-            else{
-                emptyFields++;
-            }
-        }
-        if (emptyFields > 0){
-            madlib.innterHTML = "Please fill out the fields";
-        }
-        else{
-            makeMadlib(words); 
-        }
+        makeMadlib(words); 
     });
 
+    /* Adds words to madlib */
     function makeMadlib(wordsArray){
-        let myText = `Nice to meet you too! Please excuse my ${words[0]} I was nervous for the date.`;
-        answer1.innerHTML = myText;
+        let myText = `Nice to meet you too! Please excuse my ${wordsArray[0]} I was nervous for the date.`;
+        one.innerHTML = myText;
 
-        let myText2 = `I like watching ${words[1]} ${words[2]} ${words[3]}.`;
-        answer2.innerHTML = myText2;
+        let myText2 = `I like watching ${wordsArray[1]} ${wordsArray[2]} ${wordsArray[3]}.`;
+        two.innerHTML = myText2;
 
-        let myText3 = `I make my own ${words[4]}. Personally, I think it is ${words[5]}. Sorry I’ve been ${words[6]} a lot, how about you?`;
-        answer3.innerHTML = myText3;
+        let myText3 = `I make my own ${wordsArray[4]}. Personally, I think it is ${wordsArray[5]}. Sorry I’ve been ${wordsArray[6]} a lot, how about you?`;
+        three.innerHTML = myText3;
 
-    }
+    };
     
+    /* When you click submit, it shows the madlib */
     document.querySelector(".open").addEventListener("click", function(event){
         event.preventDefault();
         document.getElementById("madlib").className = "showing";
         document.getElementById("myform").className = "hidden";
     });
 
+    /* When you click refresh, it shows the form */
     document.querySelector(".close").addEventListener("click", function(event){
         event.preventDefault();
         document.getElementById("madlib").className = "hidden";
         document.getElementById("myform").className = "showing";
     });
-
-
 
 }());
