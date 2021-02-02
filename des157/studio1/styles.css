@@ -41,6 +41,7 @@ form {
     position: relative;
 }
 
+
 label{
     margin-bottom: 10px;
     font-weight: 600;
@@ -141,9 +142,11 @@ input {
 footer {
     display: flex;
     flex-flow: row-wrap;
-    right: 180px;
+    justify-content: flex-end;
+    margin-right: 110px;
+/*     right: 180px;
     bottom: 50px;
-    position: absolute;
+    position: absolute; */
 }
 
 footer a {
