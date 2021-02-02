@@ -24,13 +24,13 @@
     /* Adds words to madlib */
     function makeMadlib(wordsArray){
         console.log("makeMadlibs");
-        let myText = `Nice to meet you too! Please excuse my ${wordsArray[0]} I was nervous for the date.`;
+        let myText = `Nice to meet you too! Please excuse my ${wordsArray[0]}, I was nervous for the date.`;
         one.innerHTML = myText;
 
-        let myText2 = `I like watching ${wordsArray[1]} ${wordsArray[2]} ${wordsArray[3]}.`;
+        let myText2 = `I like to watch ${wordsArray[2]} ${wordsArray[1]} ${wordsArray[3]}.`;
         two.innerHTML = myText2;
 
-        let myText3 = `I make my own ${wordsArray[4]}. Personally, I think it is ${wordsArray[5]}. Sorry I’ve been ${wordsArray[6]} a lot, how about you?`;
+        let myText3 = `I make my own ${wordsArray[4]}. Personally, I think it is ${wordsArray[5]}. Sorry I’ve been ${wordsArray[6]} a lot, how are you?`;
         three.innerHTML = myText3;
 
     };
