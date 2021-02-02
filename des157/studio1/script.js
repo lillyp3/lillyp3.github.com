@@ -37,14 +37,12 @@
     
     /* When you click submit, it shows the madlib */
     document.querySelector(".open").addEventListener("click", function(event){
-        /* event.preventDefault(); */
         document.getElementById("madlib").className = "showing";
         document.getElementById("myform").className = "hidden";
     });
 
     /* When you click refresh, it shows the form */
     document.querySelector(".close").addEventListener("click", function(event){
-        /* event.preventDefault(); */
         document.getElementById("madlib").className = "hidden";
         document.getElementById("myform").className = "showing";
     }); 

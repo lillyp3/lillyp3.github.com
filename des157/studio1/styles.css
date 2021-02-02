@@ -8,9 +8,13 @@ body {
 h1{
     font-weight: 900;
     font-size: 90px;
+    margin: 0;
+    margin-top: 70px;
 }
+
 h2 {
     font-weight: 400;
+    color: #f9a0a0;
 }
 
 main {
@@ -80,8 +84,9 @@ input {
 #question {
     background-color: #f9a0a0;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     margin: 5px;
+    margin-bottom: 10px;;
     padding-left: 10px;
     width: 80%;
     border-radius: 10px;
@@ -90,9 +95,11 @@ input {
 #answer1 {
     border: solid 2px #f9a0a0;
     border-radius: 10px;;
-    font-weight: 700;
+    font-weight: 600;
     margin: 5px;
     margin-left: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
     padding-left: 10px; 
     color: #f9a0a0;
 }
@@ -100,9 +107,11 @@ input {
 #answer2 {
     border: solid 2px #f9a0a0;
     border-radius: 10px;;
-    font-weight: 700;
+    font-weight: 600;
     margin: 5px;
     margin-left: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
     padding-left: 10px; 
     color: #f9a0a0;
 }
@@ -110,9 +119,11 @@ input {
 #answer3 {
     border: solid 2px #f9a0a0;
     border-radius: 10px;;
-    font-weight: 700;
+    font-weight: 600;
     margin: 5px;
     margin-left: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
     padding-left: 10px; 
     color: #f9a0a0;
 }
