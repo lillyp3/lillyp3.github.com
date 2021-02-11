@@ -27,16 +27,17 @@ h1{
 
 
 
-main{
+/* main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     
-}
+} */
 
 h2{
     color: rgb(75, 26, 190);
     font-size: 32px;
     font-family: 'Merriweather', serif;
+    margin-bottom: 0;
 } 
 
 article {
@@ -53,12 +54,13 @@ article {
 }
 
 .text{
-    line-height: 26px;;
+    line-height: 26px;
+    column-count: 3;
 }
 
 a {
     text-decoration: none;
-    color: rgb(255, 130, 174);
+    color: rgb(75, 26, 190);
 }
 
 footer {
@@ -74,16 +76,18 @@ footer p{
 }
 
 a:hover{
-    color: rgb(75, 26, 190);
+    color: rgb(255, 130, 174);
     font-weight: 900;
 }
 
 #date {
-    color: rgb(151, 148, 148);
+    /* color: rgb(151, 148, 148); */
+    color: rgb(255, 130, 174);
 }
 
-article figure {
-    padding-left: 20px;
-    padding-top: 20px;
+.photo {
+    column-count: 3;
+    line-height: 26px;
+    padding-bottom: 60px;
 }
 
