@@ -1,9 +1,10 @@
-(function () {
+/* (function () {
     'use strict';
-    console.log("reading");
+    console.log("reading"); */
 
     const FishPics = [
         "fish1.jpg",
+        "fish2.jpg",
         "fish2.jpg"
     ];
 
@@ -18,5 +19,5 @@
             currentImage = 0;
         }
 
-        slide.src = `images/${FishPics[currentImage]}`;}, 1000);
-});
+        slide.src = `images/${FishPics[currentImage]}`;}, 2000);
+/* }); */
