@@ -5,19 +5,21 @@
     const FishPics = [
         "fish1.jpg",
         "fish2.jpg",
-        "fish2.jpg"
+        "fish3.jpg"
     ];
-
+    
     let currentImage = 0;
-
-    const slide =document.getElementById("fishImages");
-
+    
+    const slide = document.getElementById("fishImages");
+    
     setInterval(function (){
         currentImage++;
-
+    
         if (currentImage > FishPics.length-1){
             currentImage = 0;
         }
-
+    
         slide.src = `images/${FishPics[currentImage]}`;}, 2000);
-/* }); */
+
+/*     
+}); */
