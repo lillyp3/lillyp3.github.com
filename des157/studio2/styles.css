@@ -1,4 +1,4 @@
-#scrollbar p {
+/* #scrollbar p {
     background-color:rgba(209, 209, 209, 0.596);
     width: 450px;
     padding: 20px;
@@ -7,4 +7,18 @@
 
 #mockups {
     width: 75%;
+} */
+
+main {
+    width: 20vw;
+    padding-left: 30px;
+    background-color: white;
+    position: fixed;
+}
+
+figure {
+    width: 80vw;
+    display: block;
+    top: 0;
+    right: 0;
 }
