@@ -8,17 +8,36 @@
 #mockups {
     width: 75%;
 } */
+body{
+    background-color: #e5dbcc;
+}
 
-main {
-    width: 20vw;
-    padding-left: 30px;
-    background-color: white;
+header {
+    width: 15vw;
+    height: 100%;
+    padding-left: 60px;
+    background-color: #ffffff;
     position: fixed;
 }
 
-figure {
-    width: 80vw;
+main {
     display: block;
+    padding-left: 350px;
     top: 0;
     right: 0;
+}
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.titles p {
+    font-size: xx-large;
+}
+
+footer {
+    position: fixed;
 }
