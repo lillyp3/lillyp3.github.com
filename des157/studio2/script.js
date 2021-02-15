@@ -10,7 +10,6 @@
         "fish3.jpg"
     ];
     
-
     const slide = document.getElementById("fishImages");
     setInterval(function (){
         currentImage++;

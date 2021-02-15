@@ -18,3 +18,14 @@ main {
     right: 0;
 }
 
+footer {
+    display: flex;
+    flex-wrap: row wrap;
+    justify-content: flex-end;
+}
+
+footer a{
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+}
