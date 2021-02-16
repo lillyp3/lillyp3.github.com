@@ -4,6 +4,10 @@ body{
     font-family: 'Krona One', sans-serif;
 }
 
+article p{
+    line-height: 24px;
+}
+
 header {
     width: 200px;                        /* Icon bar takes up 15% of window */
     height: 810px;
@@ -85,7 +89,7 @@ main figure{
     width: 600px;
     padding: 60px;
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
     margin: auto;
     position: absolute;
     top: 2250px;
