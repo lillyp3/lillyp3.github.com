@@ -34,6 +34,7 @@ main figure{
     height: 885px;                  /* fits each image to screen height */
     overflow: hidden;               /* hides any excess if image is larger than 885px t */
     margin-bottom: 50px;
+    cursor: pointer;
 }
 .description{
     margin: 0;
