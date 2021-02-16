@@ -1,6 +1,6 @@
-/* (function () {
+(function(){
     'use strict';
-    console.log("reading"); */
+    console.log("reading");
 
     /* Overlay for Fish Design */
     document.querySelector(".open1").addEventListener("mouseover", function(event){     //hover mouse over the fish design slideshow
@@ -50,7 +50,6 @@
     });
     ////////////////////////////////////////////////////////////////////////////
 
-/* }); */
 
     /* Fish design */
     let currentImage = 0;       //creates a variable to keep track of image on screen                            
@@ -126,3 +125,5 @@
         }
         
         popSlide.src = `images/${PopPics[currentImage]}`;}, 2000);
+
+}());

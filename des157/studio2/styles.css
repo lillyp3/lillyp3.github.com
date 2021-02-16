@@ -60,7 +60,7 @@ main figure{
     margin: auto;
     position: absolute;
     top: 400px;
-    right: 300px;
+    right: 250px;
 }
 
 #fossilOverlay{
@@ -69,12 +69,12 @@ main figure{
     border-radius: 40px;
     height: 100px;
     width: 600px;
-    padding: 60px;
+    padding: 40px;
     padding-top: 25px;
     margin: auto;
     position: absolute;
     top: 1300px;
-    right: 300px;
+    right: 250px;
 }
 
 #heartsOverlay{
@@ -84,11 +84,12 @@ main figure{
     height: 100px;
     width: 600px;
     padding: 60px;
-    padding-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 70px;
     margin: auto;
     position: absolute;
     top: 2250px;
-    right: 300px;
+    right: 250px;
 }
 
 #popOverlay{
@@ -102,7 +103,7 @@ main figure{
     margin: auto;
     position: absolute;
     top: 3150px;
-    right: 300px;
+    right: 250px;
 }
 
 footer {
