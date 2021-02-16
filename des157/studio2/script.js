@@ -1,9 +1,56 @@
-(function () {
+/* (function () {
     'use strict';
-    console.log("reading");
+    console.log("reading"); */
 
-    
-});
+    /* Overlay for Fish Design */
+    document.querySelector(".open1").addEventListener("mouseover", function(event){     //hover mouse over the fish design slideshow
+        event.preventDefault();
+        document.getElementById("fishOverlay").className = "showing";                   //changes class of overlay so it is visible
+    });
+
+    document.querySelector(".open1").addEventListener("mouseleave", function(event){       //move mouse off the image, the overlay goes back to not being visible
+        event.preventDefault();
+        document.getElementById("fishOverlay").className = "hidden";
+    });
+    ////////////////////////////////////////////////////////////////////////////
+
+    /* Fossil Overlay */
+    document.querySelector(".open2").addEventListener("mouseover", function(event){
+        event.preventDefault();
+        document.getElementById("fossilOverlay").className = "showing";
+    });
+
+    document.querySelector(".open2").addEventListener("mouseleave", function(event){
+        event.preventDefault();
+        document.getElementById("fossilOverlay").className = "hidden";
+    });
+    ////////////////////////////////////////////////////////////////////////////
+
+    /* Candy Hearts Overlay */
+    document.querySelector(".open3").addEventListener("mouseover", function(event){
+        event.preventDefault();
+        document.getElementById("heartsOverlay").className = "showing";
+    });
+
+    document.querySelector(".open3").addEventListener("mouseleave", function(event){
+        event.preventDefault();
+        document.getElementById("heartsOverlay").className = "hidden";
+    });
+    ////////////////////////////////////////////////////////////////////////////
+
+    /* Lollipop Overlay */
+    document.querySelector(".open4").addEventListener("mouseover", function(event){
+        event.preventDefault();
+        document.getElementById("popOverlay").className = "showing";
+    });
+
+    document.querySelector(".open4").addEventListener("mouseleave", function(event){
+        event.preventDefault();
+        document.getElementById("popOverlay").className = "hidden";
+    });
+    ////////////////////////////////////////////////////////////////////////////
+
+/* }); */
 
     /* Fish design */
     let currentImage = 0;       //creates a variable to keep track of image on screen                            

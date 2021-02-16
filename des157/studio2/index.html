@@ -21,49 +21,80 @@
     <!-- Icons are listed on left side of screen, each is a link to the corresponding section on the right side -->
     <header>
         <div class="icon">
-            <a href="#fish"><img src="images/Fish.png" alt="fish"></a>
+            <a href="#fish"><img src="images/Fish.png" alt="fish design"></a>
         </div>
-        <p class="hidden">01 Fish and Lilypad</p>
+        <p class="description">01 Fish and Lilypad</p>
 
         <div class="icon">
-            <a href="#fossil"><img src="images/Fossil.png" alt="fossil"></a>
+            <a href="#fossil"><img src="images/Fossil.png" alt="fossil design"></a>
         </div>
-        <p class="hidden">02 Fossil</p>
+        <p class="description">02 Fossil</p>
 
         <div class="icon">
-            <a href="#heart"><img src="images/Hearts.png" alt="hearts"></a>
+            <a href="#heart"><img src="images/Hearts.png" alt="hearts design"></a>
         </div>
-        <p class="hidden">03 Candy Hearts</p>
+        <p class="description">03 Candy Hearts</p>
 
         <div class="icon">
-            <a href="#pop"><img src="images/Lollipop.png" alt="lollipop"></a>
+            <a href="#pop"><img src="images/Lollipop.png" alt="lollipop design"></a>
         </div>   
-        <p class="hidden">04 Lollipop</p>
+        <p class="description">04 Lollipop</p>
     </header>
 
     <!-- right side of screen -->
     <main>
         <!-- Fish Design slideshow -->
-        <figure id="fish">
+        <figure id="fish" class="open1">
             <img src="images/fish1.jpg" alt="Fish design slideshow" id="fishImages">       
         </figure>
 
         <!-- Fossil Design Slideshow -->
-        <figure id="fossil">
+        <figure id="fossil" class="open2">
             <img src="images/fossil1.jpg" alt="fossil tote" id="fossilImages">
         </figure>
 
         <!-- Heart Design Slideshow -->
-        <figure id="heart">
+        <figure id="heart" class="open3">
             <img src="images/Hearts1.jpg" alt="candy Hearts bag" id="heartImages">
         </figure>
 
         <!-- Lollipop Design Slideshow -->
-        <figure id="pop">
+        <figure id="pop" class="open4">
             <img src="images/pop1.jpg" alt="Lollipop shirt" id="popImages">
         </figure>
     </main>
+
+    <section id="fishOverlay" class="hidden">
+        <article>
+            <h1>01 Fish and Lilypad</h1>
+            <p>This design features a koi fish swimming through lilypads. 
+                The texture is created from a multiply effect, allowing the different shades of green to stand out</p>
+        </article>
+    </section>
+
+    <section id="fossilOverlay" class="hidden">
+        <article>
+            <h1>02 Fossil</h1>
+            <p>This design features a prehistoric plant preserved in a rock to create a fossil.</p>
+        </article>
+    </section>
+
+    <section id="heartsOverlay" class="hidden">
+        <article>
+            <h1>03 Candy Hearts</h1>
+            <p>This design features a display of conversation hearts, a popular candy for Valentine's Day. Instead of the usual love messages, these
+                hearts create a negative message.
+            </p>
+        </article>
+    </section>
     
+    <section id="popOverlay" class="hidden">
+        <article>
+            <h1>04 Lollipop</h1>
+            <p>This design features a heart-shaped lollipop. This lollipop is nostalgic, and relates back to elementary school and sharing valentines.
+            </p>
+        </article>
+    </section>
 </body>
 
 <footer>
