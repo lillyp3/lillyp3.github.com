@@ -18,6 +18,23 @@ main {
     right: 0;
 }
 
+#zoom {
+    width: 890px;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 40px;
+
+}
+
+#zoom img{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 footer {
     display: flex;
     flex-wrap: row wrap;
