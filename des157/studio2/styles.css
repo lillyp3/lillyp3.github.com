@@ -43,11 +43,11 @@ main figure{
 }
 
 .hidden {
-    display: none;
+    display: none;                  /* when marked as hidden, div is not displayed on screen */
 }
 
 .showing {
-    display: block;
+    display: block;                 /* when marked as showing, display block will put element on the screen */
 }
 
 .open{
