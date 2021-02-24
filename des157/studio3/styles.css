@@ -3,6 +3,15 @@ body {
     color: #333;
     padding: 50px;
     line-height: 1.5em;
+    text-align: center;
+    position: relative;
+    background-color: #ebf6ff;
+    background-image: url("images/Game-of-Frog.jpg");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
 }
 
 button { 
@@ -13,13 +22,61 @@ div {
     padding: 20px;
 }
 
-#gamecontrol, #score {
-    background-color: aliceblue;
+#gamecontrol {
+    /* background-color: aliceblue; */
+}
+
+#score {
+    font-size: 45px;
+}
+
+#p1 {
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+} 
+
+#p2 {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
 }
 
 #game {
-    background-color:#eaeaea;
+    /* background-color:#eaeaea; */
 }
+
 #actions {
-    background-color: silver;
+    /* background-color: silver; */
+}
+
+button{
+    border: solid 2px rgb(26, 48, 26);
+    border-radius: 5px;
+}
+
+.open {
+    display: showing;
+}
+
+.hidden {
+    display: none;
+}
+
+#overlay {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    height: 400px;
+    width: 50%;
+    padding: 40px;
+    padding-bottom: 0;
+    position: fixed;
+    top: 200px;
+    right: 300px;
+}
+
+.overlay button{
+    padding: 0;
+    margin: 0;
 }

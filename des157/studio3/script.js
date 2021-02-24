@@ -1,16 +1,24 @@
 (function(){
     "use strict";
 
-    var startGame = document.getElementById('startgame');
-    var gameControl = document.getElementById('gamecontrol');
-    var game = document.getElementById('game');
-    var score = document.getElementById('score');
-    var actionArea = document.getElementById('actions');
+    const startGame = document.getElementById('startgame');             //variable "startGame" is set to the div with ID: startGame
+    const gameControl = document.getElementById('gamecontrol');         //variable "gameControl" is set to the div with ID: gameControl
+    let game = document.getElementById('game');                         //set a variable that holds the game
+    let score = document.getElementById('score');                       //set a variable to keep track of score
+    let actionArea = document.getElementById('actions');                //set a variable for the area where the buttons to take action are
+    const overlybtn = document.querySelector("#overlay button")
+    let p1Score = document.getElementById('p1');
+    let p2Score = document.getElementById('p2');
 
-    var gameData = {
-        dice: ['1die.jpg', '2die.jpg', '3die.jpg', 
+    document.querySelector(".close").addEventListener("click", function(event){
+        event.preventDefault();
+        document.getElementById("overlay").className = "hidden";
+    });
+
+    let gameData = {                                                    //holds the changing variables
+        dice: ['1die.jpg', '2die.jpg', '3die.jpg', //dice
                 '4die.jpg', '5die.jpg', '6die.jpg'],
-        players: ['player 1', 'player 2'],
+        players: ['player 1', 'player 2'],  //array for total players
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -98,9 +106,12 @@
     }
 
     function showCurrentScore(){
-        score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}
+/*         score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}
         ${gameData.score[0]}</strong> and <strong>${gameData.players[1]}
-        ${gameData.score[1]}</strong></p>`;
+        ${gameData.score[1]}</strong></p>`; */
+
+        p1Score.innerHTML = `<p>${gameData.score[0]}</p>`;
+        p2Score.innerHTML = `<p>${gameData.score[1]}</p>`;
     }
 
 }());
