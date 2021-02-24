@@ -2,6 +2,7 @@ body {
     font-family: 'Russo One', sans-serif;
     color: #333;
     padding: 50px;
+    font-size: 18px;
     line-height: 1.5em;
     text-align: center;
     position: relative;
@@ -9,6 +10,7 @@ body {
     background-image: url("images/Game-of-Frog2.jpg");
     background-repeat: no-repeat;
 }
+
 
 h1 {
     text-align: center;
@@ -34,7 +36,9 @@ div {
 }
 
 #actions{
-    padding-left: 730px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 820px;
     padding-top:  40px;
 }
 #score {
@@ -48,25 +52,32 @@ div {
 
 
 #game img{
-    padding-bottom: 190px;
+    padding-bottom: 100px;
 }
+
+#game p{
+    margin-top: 50px;
+}
+
 
 #p1 {
     position: fixed;
     left: 180px;
-    bottom: 165px;
+    bottom: 160px;
 } 
 
 #p2 {
     position: fixed;
     right: 180px;
-    bottom: 165px;
+    bottom: 160px;
 }
 
 
 button{
-    border: solid 2px rgb(26, 48, 26);
+    border: solid 3px #4f7c45;
     border-radius: 5px;
+    color: #4f7c45;
+    background-color: white;
 }
 
 .open {
@@ -81,7 +92,7 @@ button{
     background-color: white;
     border: solid 2px black;
     border-radius: 10px;
-    height: 400px;
+    height: 460px;
     width: 50%;
     padding: 40px;
     padding-bottom: 0;
@@ -94,3 +105,4 @@ button{
     padding: 0;
     margin: 0;
 }
+

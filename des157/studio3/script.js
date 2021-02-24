@@ -109,10 +109,6 @@
     }
 
     function showCurrentScore(){
-/*         score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]}
-        ${gameData.score[0]}</strong> and <strong>${gameData.players[1]}
-        ${gameData.score[1]}</strong></p>`; */
-
         p1Score.innerHTML = `<p>${gameData.score[0]}</p>`;
         p2Score.innerHTML = `<p>${gameData.score[1]}</p>`;
     }
