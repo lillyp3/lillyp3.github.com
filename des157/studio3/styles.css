@@ -6,12 +6,14 @@ body {
     text-align: center;
     position: relative;
     background-color: #ebf6ff;
-    background-image: url("images/Game-of-Frog.jpg");
+    background-image: url("images/Game-of-Frog2.jpg");
     background-repeat: no-repeat;
 }
 
 h1 {
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 button { 
@@ -32,28 +34,34 @@ div {
 }
 
 #actions{
-    padding-left: 700px;
+    padding-left: 730px;
+    padding-top:  40px;
 }
 #score {
     font-size: 45px;
 }
 
+#bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#game p{
+    padding-top: 250px;
+}
+
 #p1 {
     position: absolute;
-    left: 50px;
-    bottom: 0;
+    left: 183px;
+    bottom: 50px;
 } 
 
 #p2 {
     position: absolute;
-    right: 50px;
-    bottom: 0;
+    right: 183px;
+    bottom: 50px;
 }
-
-/* #game {
-    
-}
- */
 
 
 button{
@@ -78,7 +86,7 @@ button{
     padding: 40px;
     padding-bottom: 0;
     position: fixed;
-    top: 200px;
+    top: 160px;
     right: 300px;
 }
 

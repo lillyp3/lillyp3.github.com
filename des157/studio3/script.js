@@ -6,17 +6,18 @@
     let game = document.getElementById('game');                         //set a variable that holds the game
     let score = document.getElementById('score');                       //set a variable to keep track of score
     let actionArea = document.getElementById('actions');                //set a variable for the area where the buttons to take action are
-    const overlybtn = document.querySelector("#overlay button")
+    /* const overlybtn = document.querySelector("#overlay button") */
     let p1Score = document.getElementById('p1');
     let p2Score = document.getElementById('p2');
 
     document.querySelector(".close").addEventListener("click", function(event){
         event.preventDefault();
         document.getElementById("overlay").className = "hidden";
+        document.getElementById("gamecontrol").className = "open";
     });
 
     let gameData = {                                                    //holds the changing variables
-        dice: ['1die.jpg', '2die.jpg', '3die.jpg', //dice
+        dice: ['player1.png', '2die.jpg', '3die.jpg', //dice
                 '4die.jpg', '5die.jpg', '6die.jpg'],
         players: ['player 1', 'player 2'],  //array for total players
         score: [0, 0],
@@ -29,8 +30,9 @@
 
     startGame.addEventListener("click", function(){
         gameData.index = Math.round(Math.random());
-        gameControl.innerHTML = `<h2>The Game Has Started</h2>`;
-        gameControl.innerHTML += `<button id="quit"> Wanna Quit?</button>`;
+        gameControl.innerHTML = `<h2>Not having fun?</h2>`;
+        gameControl.innerHTML += `<button id="quit"> Quit Game</button>`;
+
 
         document.getElementById("quit").addEventListener("click", function(){
             location.reload();
@@ -53,14 +55,16 @@
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;  //don't use ceil because could result in a zero
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
-        game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-        game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">
+        /* game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`; */
+        /* game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> */
+        game.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}">
                             <img src="${gameData.dice[gameData.roll2-1]}">`;
+        game.innerHTML += `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         console.log(gameData);
 
         if(gameData.rollSum === 2){
-            game.innerHTML += `<p>Oh snap! Snake eyes!</p>`;
+            game.innerHTML += `<p>Snake eyes!</p>`;
             gameData.score[gameData.index] = 0;     //zero out the score b/c snake eyes
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);       //if its a 1 its "true" so it turns to 0, if its a zero its false and turns to 1
             showCurrentScore();                                                //"?" asks "is it true?"
@@ -97,7 +101,7 @@
             score.innerHTML = `<h2>${gameData.players[gameData.index]}
             wins with ${gameData.score[gameData.index]} points!</h2>`;
 
-            actionArea.innderHTMl = "";
+            actionArea.innerHTMl = "";
             document.getElementById("quit").innerHTML = "Start New Game";
         }
         else{
