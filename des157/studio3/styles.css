@@ -22,10 +22,18 @@ div {
     padding: 20px;
 }
 
-#gamecontrol {
-    /* background-color: aliceblue; */
+/* #gamecontrol {
+
+} */
+
+#top {
+    display: flex;
+    flex-direction: row;
 }
 
+#actions{
+    padding-left: 700px;
+}
 #score {
     font-size: 45px;
 }
@@ -42,13 +50,11 @@ div {
     bottom: 0;
 }
 
-#game {
-    /* background-color:#eaeaea; */
+/* #game {
+    
 }
+ */
 
-#actions {
-    /* background-color: silver; */
-}
 
 button{
     border: solid 2px rgb(26, 48, 26);
@@ -63,7 +69,7 @@ button{
     display: none;
 }
 
-#overlay {
+#overlay{
     background-color: white;
     border: solid 2px black;
     border-radius: 10px;
