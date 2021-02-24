@@ -5,7 +5,7 @@ body {
     line-height: 1.5em;
     text-align: center;
     position: relative;
-    background-color: #ebf6ff;
+    background-color: #dcf1ff;
     background-image: url("images/Game-of-Frog2.jpg");
     background-repeat: no-repeat;
 }
@@ -47,20 +47,20 @@ div {
 }
 
 
-#game p{
-    padding-top: 250px;
+#game img{
+    padding-bottom: 190px;
 }
 
 #p1 {
-    position: absolute;
-    left: 183px;
-    bottom: 50px;
+    position: fixed;
+    left: 180px;
+    bottom: 165px;
 } 
 
 #p2 {
-    position: absolute;
-    right: 183px;
-    bottom: 50px;
+    position: fixed;
+    right: 180px;
+    bottom: 165px;
 }
 
 

@@ -10,15 +10,9 @@
     let p1Score = document.getElementById('p1');
     let p2Score = document.getElementById('p2');
 
-    document.querySelector(".close").addEventListener("click", function(event){
-        event.preventDefault();
-        document.getElementById("overlay").className = "hidden";
-        document.getElementById("gamecontrol").className = "open";
-    });
-
     let gameData = {                                                    //holds the changing variables
-        dice: ['player1.png', '2die.jpg', '3die.jpg', //dice
-                '4die.jpg', '5die.jpg', '6die.jpg'],
+        dice: ['images/die1.png', 'images/die2.png', 'images/die3.png', //dice
+                'images/die4.png', 'images/die5.png', 'images/die6.png'],
         players: ['player 1', 'player 2'],  //array for total players
         score: [0, 0],
         roll1: 0,
@@ -28,13 +22,18 @@
         gameEnd: 29
     };
 
-    startGame.addEventListener("click", function(){
-        gameData.index = Math.round(Math.random());
-        gameControl.innerHTML = `<h2>Not having fun?</h2>`;
+    document.querySelector(".close").addEventListener("click", function(event){         
+        event.preventDefault();
+        document.getElementById("overlay").className = "hidden";                    //hides overlay of instuctions when click start button
+        document.getElementById("gamecontrol").className = "open";                  //when overlay closes, gamecocntrol div shows
+    });
+
+    startGame.addEventListener("click", function(){                                 //click start game button
+        gameData.index = Math.round(Math.random());                                 //randomly chooses player
+        gameControl.innerHTML = `<h2>Not having fun?</h2>`;             
         gameControl.innerHTML += `<button id="quit"> Quit Game</button>`;
 
-
-        document.getElementById("quit").addEventListener("click", function(){
+        document.getElementById("quit").addEventListener("click", function(){       //click Quit Game button and the page reloads
             location.reload();
         });
 
@@ -46,7 +45,6 @@
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;        //gets the player (either index 0 or 1)
         actionArea.innerHTML = `<button id="roll">Roll the Dice</button>`;
         document.getElementById("roll").addEventListener("click", function(){
-
             throwDice();
         });
     }
@@ -57,7 +55,7 @@
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
         /* game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`; */
         /* game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> */
-        game.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}">
+        game.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}">                
                             <img src="${gameData.dice[gameData.roll2-1]}">`;
         game.innerHTML += `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
@@ -103,6 +101,7 @@
 
             actionArea.innerHTMl = "";
             document.getElementById("quit").innerHTML = "Start New Game";
+            
         }
         else{
             showCurrentScore();
