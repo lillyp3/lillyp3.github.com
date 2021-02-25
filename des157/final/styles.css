@@ -22,9 +22,10 @@ h1{
 
 h2{
     color: rgb(75, 26, 190);
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'Merriweather', serif;
     margin-bottom: 0;
+    border-bottom: solid 2px rgba(75, 26, 190, 0.26);
 } 
 
 article {
@@ -40,10 +41,14 @@ article {
     font-family: 'Asap', sans-serif;
 }
 
-.text{
+p{
     line-height: 26px;
-    column-count: 3;
-    column-gap: 35px;
+    column-count: 2;
+    column-gap: 30px;
+}
+
+#no {
+    column-count: 1;
 }
 
 a {
