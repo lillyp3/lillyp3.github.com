@@ -17,7 +17,7 @@
     let gameData = {                                                    //holds the changing variables
         dice: ['images/die1.png', 'images/die2.png', 'images/die3.png', //dice
                 'images/die4.png', 'images/die5.png', 'images/die6.png'],
-        players: ['player 1', 'player 2'],  //array for total players
+        players: ['Player 1', 'Player 2'],  //array for total players
         score: [0, 0],
         roll1: 0,
         roll2: 0,
@@ -48,7 +48,7 @@
     });
 
     function setUpTurn(){
-        game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;        //gets the player (either index 0 or 1)
+        game.innerHTML = `<p>Roll the dice ${gameData.players[gameData.index]}</p>`;        //gets the player (either index 0 or 1)
         actionArea.innerHTML = `<button id="roll">Roll the Dice</button>`;
         document.getElementById("roll").addEventListener("click", function(){
             diceSound.play();
@@ -65,7 +65,7 @@
         /* game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> */
         game.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}">                
                             <img src="${gameData.dice[gameData.roll2-1]}">`;
-        game.innerHTML += `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+        game.innerHTML += `<p>${gameData.players[gameData.index]}'s turn</p>`;
         gameData.rollSum = gameData.roll1 + gameData.roll2;
         console.log(gameData);
 
