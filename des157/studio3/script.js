@@ -9,6 +9,9 @@
     /* const overlybtn = document.querySelector("#overlay button") */
     let p1Score = document.getElementById('p1');
     let p2Score = document.getElementById('p2');
+    const btnSound = new Audio('media/bubble4.mp3');
+    const diceSound = new Audio('media/Timer2.mp3');
+
 
     let gameData = {                                                    //holds the changing variables
         dice: ['images/die1.png', 'images/die2.png', 'images/die3.png', //dice
@@ -24,11 +27,13 @@
 
     document.querySelector(".close").addEventListener("click", function(event){         
         event.preventDefault();
+        btnSound.play();
         document.getElementById("overlay").className = "hidden";                    //hides overlay of instuctions when click start button
         document.getElementById("gamecontrol").className = "open";                  //when overlay closes, gamecocntrol div shows
     });
 
-    startGame.addEventListener("click", function(){                                 //click start game button
+    startGame.addEventListener("click", function(){ 
+        btnSound.play();                                //click start game button
         gameData.index = Math.round(Math.random());                                 //randomly chooses player
         gameControl.innerHTML = `<h2>Not having fun?</h2>`;             
         gameControl.innerHTML += `<button id="quit"> Quit Game</button>`;
@@ -45,11 +50,13 @@
         game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;        //gets the player (either index 0 or 1)
         actionArea.innerHTML = `<button id="roll">Roll the Dice</button>`;
         document.getElementById("roll").addEventListener("click", function(){
+            diceSound.play();
             throwDice();
         });
     }
 
     function throwDice(){
+        diceSound.play();
         actionArea.innerHTML = '';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1;  //don't use ceil because could result in a zero
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
