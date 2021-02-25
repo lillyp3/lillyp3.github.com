@@ -11,6 +11,7 @@
     let p2Score = document.getElementById('p2');
     const btnSound = new Audio('media/bubble4.mp3');
     const diceSound = new Audio('media/Timer2.mp3');
+    let win = document.getElementById("win");
 
 
     let gameData = {                                                    //holds the changing variables
@@ -103,11 +104,17 @@
 
     function checkWinningCondition(){
         if (gameData.score[gameData.index] > gameData.gameEnd){
-            score.innerHTML = `<h2>${gameData.players[gameData.index]}
+            /* score.innerHTML = `<h2>${gameData.players[gameData.index]}
+            wins with ${gameData.score[gameData.index]} points!</h2>`; */
+            win.className = "open";
+            win.innerHTML = `<h2>${gameData.players[gameData.index]}
             wins with ${gameData.score[gameData.index]} points!</h2>`;
 
             actionArea.innerHTMl = "";
             document.getElementById("quit").innerHTML = "Start New Game";
+            game.className = "hidden";
+            actionArea.className = "hidden";
+
             
         }
         else{
