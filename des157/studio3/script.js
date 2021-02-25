@@ -66,18 +66,18 @@
             gameData.score[gameData.index] = 0;     //zero out the score b/c snake eyes
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);       //if its a 1 its "true" so it turns to 0, if its a zero its false and turns to 1
             showCurrentScore();                                                //"?" asks "is it true?"
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 4000);
         }
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
             game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to 
                                 ${gameData.players[gameData.index]}</p>`;
-            setTimeout(setUpTurn, 2000);
+            setTimeout(setUpTurn, 4000);
         }
         else{
             //if neither die is a 1
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;     //updates score depending on which player rolled
-            actionArea.innerHTML = `<button id="rollagain">Roll again</button> or <button
+            actionArea.innerHTML = `<button id="rollagain">Roll Again</button> or <button
             id="pass">Pass</button>`;
 
             document.getElementById("rollagain").addEventListener("click", function (){     //roll again button

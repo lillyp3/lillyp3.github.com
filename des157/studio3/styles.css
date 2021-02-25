@@ -18,17 +18,9 @@ h1 {
     margin-bottom: 0;
 }
 
-button { 
-    padding: 10px;
-}
-
 div {
     padding: 20px;
 }
-
-/* #gamecontrol {
-
-} */
 
 #top {
     display: flex;
@@ -74,10 +66,16 @@ div {
 
 
 button{
+    padding: 10px;
     border: solid 3px #4f7c45;
     border-radius: 5px;
     color: #4f7c45;
     background-color: white;
+}
+
+button:hover{
+    background-color: #4f7c45;
+    color: white;
 }
 
 .open {
@@ -106,3 +104,29 @@ button{
     margin: 0;
 }
 
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+
+}
+
+footer p{
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #4f7c45;
+}
+
+footer a:hover{
+    color: #333;
+    font-size: 16px;;
+}
