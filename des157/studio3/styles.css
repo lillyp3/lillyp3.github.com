@@ -25,6 +25,7 @@ div {
 #top {
     display: flex;
     flex-direction: row;
+    height: 150px;
 }
 
 #actions{
@@ -32,6 +33,11 @@ div {
     flex-direction: column;
     padding-left: 820px;
     padding-top:  40px;
+}
+
+#actions button{
+    padding: 5px;
+    font-size: 30px;
 }
 #score {
     font-size: 45px;
@@ -42,8 +48,8 @@ div {
     flex-direction: column;
 }
 
-
 #game img{
+    margin-top: 0;
     padding-bottom: 100px;
 }
 

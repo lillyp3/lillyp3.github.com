@@ -6,7 +6,6 @@
     let game = document.getElementById('game');                         //set a variable that holds the game
     let score = document.getElementById('score');                       //set a variable to keep track of score
     let actionArea = document.getElementById('actions');                //set a variable for the area where the buttons to take action are
-    /* const overlybtn = document.querySelector("#overlay button") */
     let p1Score = document.getElementById('p1');
     let p2Score = document.getElementById('p2');
     const btnSound = new Audio('media/bubble4.mp3');
@@ -74,13 +73,13 @@
             gameData.score[gameData.index] = 0;     //zero out the score b/c snake eyes
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);       //if its a 1 its "true" so it turns to 0, if its a zero its false and turns to 1
             showCurrentScore();                                                //"?" asks "is it true?"
-            setTimeout(setUpTurn, 4000);
+            setTimeout(setUpTurn, 3500);
         }
         else if(gameData.roll1 === 1 || gameData.roll2 === 1){
             gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to 
+            game.innerHTML += `<p>You rolled a one, switching to 
                                 ${gameData.players[gameData.index]}</p>`;
-            setTimeout(setUpTurn, 4000);
+            setTimeout(setUpTurn, 3500);
         }
         else{
             //if neither die is a 1
@@ -104,13 +103,10 @@
 
     function checkWinningCondition(){
         if (gameData.score[gameData.index] > gameData.gameEnd){
-            /* score.innerHTML = `<h2>${gameData.players[gameData.index]}
-            wins with ${gameData.score[gameData.index]} points!</h2>`; */
             win.className = "open";
             win.innerHTML = `<h2>${gameData.players[gameData.index]}
             wins with ${gameData.score[gameData.index]} points!</h2>`;
-
-            actionArea.innerHTMl = "";
+            actionArea.innerHTML = '';
             document.getElementById("quit").innerHTML = "Start New Game";
             game.className = "hidden";
             actionArea.className = "hidden";
