@@ -2,11 +2,6 @@ body{
     font-family: 'Krona One', sans-serif;
 }
 
-article {
-    display: flex;
-    flex-direction: row;
-}
-
 
 .hidden {
     display: none;                  /* when marked as hidden, div is not displayed on screen */
@@ -15,7 +10,55 @@ article {
 .showing {
     display: block;                 /* when marked as showing, display block will put element on the screen */
 }
+#top{
+    background-color: rgba(219, 219, 219, 0.61);
+    height: 768px;
+    width: 100%;
+}
 
+#start{
+    background-color: white;
+    border: 2px solid black;
+    font-size: 35px;
+    width: 250px;
+    height: 60px;
+
+}
+
+.item {
+    cursor: pointer;
+}
+
+#fishOverlay {
+    background-color: white;
+    border-radius: 40px;
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    
+}
+
+#fish{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 100px;
+
+}
+
+#fish div{
+    background-color: gray;
+    height: 400px;
+    width: 450px;
+    padding: 20px;
+}
+
+#fish img{
+    padding: 20px;
+}
 footer {
     display: flex;
     flex-wrap: row wrap;

@@ -7,10 +7,11 @@
         document.getElementById("fishOverlay").className = "showing";                   //changes class of overlay so it is visible
     });
 
-    document.querySelector(".open1").addEventListener("mouseleave", function(event){       //move mouse off the image, the overlay goes back to not being visible
+    document.querySelector("button").addEventListener("click", function(event){     //hover mouse over the fish design slideshow
         event.preventDefault();
-        document.getElementById("fishOverlay").className = "hidden";
+        document.getElementById("fishOverlay").className = "hidden";                   //changes class of overlay so it is visible
     });
+
 
 
         /* Fish design */
