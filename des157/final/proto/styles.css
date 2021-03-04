@@ -8,19 +8,68 @@ header{
     position: fixed;
     right: 30px;
 }
-#shirts {
+
+/* First page/Title page */
+
+#top{
+    width: height;
+    height: 820px;
+}
+
+#top section{
+    text-align: center;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-size: 40px;
+}
+
+#top button{
+    margin-top: 60px;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#top button:hover{
+    background-color: rgb(165,251,235);
+}
+/* First page ^^^^^^^^^^^ */
+
+
+
+#shirts article{
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
+    color: black;
 }
 
-#shirts img:hover{
+#first:hover{
     filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
 }
 
-.showingColor{
+#second:hover{
     filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
 }
+
+#third:hover{
+    filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
+}
+
+#fourth:hover{
+    filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
+}
+
+/* .showingColor{
+    filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
+} */
 
 .hidden {
     display: none;                  /* when marked as hidden, div is not displayed on screen */
@@ -36,12 +85,44 @@ footer {
     justify-content: flex-end;
 }
 
+a{
+    text-decoration: none;
+}
+
 footer a{
     padding: 30px;
-    text-decoration: none;
     color: white;
 }
 
 footer a:hover{
     color: rgb(165,251,235);
+}
+
+
+#fishOverlay{
+    background-color: white;
+    margin-top: 140px;
+    width: 500px;
+    height: 640px;
+}
+
+#fossilOverlay{
+    background-color: white;
+    margin-top: 140px;
+    width: 500px;
+    height: 640px;
+}
+
+#candyOverlay{
+    background-color: white;
+    margin-top: 140px;
+    width: 500px;
+    height: 640px;
+}
+
+#popOverlay{
+    background-color: white;
+    margin-top: 140px;
+    width: 500px;
+    height: 640px;
 }

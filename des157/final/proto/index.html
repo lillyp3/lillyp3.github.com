@@ -12,20 +12,51 @@
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-    
+
         <script src="script.js" defer></script>
+    
 </head>
 <body>
-    <header>
+    <header>       <!-- fix to display accurate numbers and don't show in beginning -->
         <p>01/04</p>
     </header>
     <main>
+        <div id="top">
+            <section>
+                <h1>Take a Tour of My Designs</h1>
+                <button><a href="#first">Start Tour</a></button>        <!-- add smoothscroll -->
+            </section>
+        </div>
         <article id="shirts">
-            
-            <img src="images/fishShirt.png" alt="fish shirt">
+            <article>
+                <img src="images/fishShirt.png" alt="fish shirt" id="first">
+                <div id="fishOverlay" class="hidden">
+                    <img src="images/lilypad.JPG" alt="fish design">
+                    <p>Decription and Slideshow?</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/fossilShirt.png" alt="fossil shirt" id="second">
+                <div id="fossilOverlay" class="hidden">
+                    <img src="images/Fossil.JPG" alt="fossil design">
+                </div>
+            </article>
+            <article>
+                <img src="images/candyShirt.png" alt="candy shirt" id="third">
+                <div id="candyOverlay" class="hidden">
+                    <img src="images/CandyHearts.JPG" alt="candy design">
+                </div>
+            </article>
+            <article>
+                <img src="images/popShirt.png" alt="lollipop shirt" id="fourth">
+                <div id="popOverlay" class="hidden">
+                    <img src="images/HeartLollipop.JPG" alt="lollipop design">
+                </div>
+            </article>
+<!--        <img src="images/fishShirt.png" alt="fish shirt" id="first">
             <img src="images/fossilShirt.png" alt="fossil shirt">
             <img src="images/CandyShirt.png" alt="candy shirt">
-            <img src="images/popShirt.png" alt="lollipop shirt">
+            <img src="images/popShirt.png" alt="lollipop shirt"> -->
         </article>
     </main>
 
