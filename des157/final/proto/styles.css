@@ -1,7 +1,26 @@
-body{
+body {
+    background-color: black;
     font-family: 'Krona One', sans-serif;
+    color: white;
 }
 
+header{
+    position: fixed;
+    right: 30px;
+}
+#shirts {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+#shirts img:hover{
+    filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
+}
+
+.showingColor{
+    filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
+}
 
 .hidden {
     display: none;                  /* when marked as hidden, div is not displayed on screen */
@@ -10,55 +29,7 @@ body{
 .showing {
     display: block;                 /* when marked as showing, display block will put element on the screen */
 }
-#top{
-    background-color: rgba(219, 219, 219, 0.61);
-    height: 768px;
-    width: 100%;
-}
 
-#start{
-    background-color: white;
-    border: 2px solid black;
-    font-size: 35px;
-    width: 250px;
-    height: 60px;
-
-}
-
-.item {
-    cursor: pointer;
-}
-
-#fishOverlay {
-    background-color: white;
-    border-radius: 40px;
-    height: 1000px;
-    width: 1000px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-    
-}
-
-#fish{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    padding-top: 100px;
-
-}
-
-#fish div{
-    background-color: gray;
-    height: 400px;
-    width: 450px;
-    padding: 20px;
-}
-
-#fish img{
-    padding: 20px;
-}
 footer {
     display: flex;
     flex-wrap: row wrap;
@@ -68,9 +39,9 @@ footer {
 footer a{
     padding: 30px;
     text-decoration: none;
-    color: rgb(17, 0, 56);
+    color: white;
 }
 
 footer a:hover{
-    color: rgb(101, 113, 221);
+    color: rgb(165,251,235);
 }
