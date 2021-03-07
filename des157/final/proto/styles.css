@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background-color: rgb(53, 52, 52);
+    /* background-image: url("images/background.jpg"); */
     font-family: 'Krona One', sans-serif;
     color: white;
 }
@@ -28,6 +29,10 @@ h1{
     font-size: 40px;
 }
 
+h2{
+    font-size: 50px;
+}
+
 #top button{
     margin-top: 60px;
     background-color: white;
@@ -51,6 +56,13 @@ h1{
     color: black;
 }
 
+#shirts div{
+    margin-top: 140px;
+    width: 500px;
+    height: 640px;
+    color: rgb(165,251,235);
+}
+
 #first:hover{
     filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
 }
@@ -67,9 +79,6 @@ h1{
     filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
 }
 
-/* .showingColor{
-    filter: drop-shadow( 0px 5px 30px rgb(165,251,235));
-} */
 
 .hidden {
     display: none;                  /* when marked as hidden, div is not displayed on screen */
@@ -99,30 +108,20 @@ footer a:hover{
 }
 
 
-#fishOverlay{
+#video1{
+    width: 1200px;
+    height: 730px;
     background-color: white;
-    margin-top: 140px;
-    width: 500px;
-    height: 640px;
+    border-radius: 40px;
+    position: relative;
+    top: 1200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#fossilOverlay{
-    background-color: white;
-    margin-top: 140px;
-    width: 500px;
-    height: 640px;
-}
-
-#candyOverlay{
-    background-color: white;
-    margin-top: 140px;
-    width: 500px;
-    height: 640px;
-}
-
-#popOverlay{
-    background-color: white;
-    margin-top: 140px;
-    width: 500px;
-    height: 640px;
+#video1 video{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    border: 3px solid white;
 }
