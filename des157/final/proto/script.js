@@ -4,39 +4,41 @@
 
     /* Item 01 */
 
-    document.getElementById("first").addEventListener("mouseover", function(event){         //click on shirt image, overlay changes from hidden to showing
+/*     document.getElementById("first").addEventListener("mouseover", function(event){         
         event.preventDefault();
         document.getElementById("fishText").className = "showing";                   
     });
 
-    document.getElementById("first").addEventListener("mouseleave", function(event){         //click on shirt image, overlay changes from hidden to showing
+    document.getElementById("first").addEventListener("mouseleave", function(event){         
         event.preventDefault();
         document.getElementById("fishText").className = "hidden";                   
-    });
+    }); */
 
-    document.getElementById("first").addEventListener("click", function(event){         //click on shirt image, overlay changes from hidden to showing
+    document.getElementById("first").addEventListener("click", function(event){         
         event.preventDefault();
-        document.getElementById("video1").className = "showing";                
+        document.getElementById("fishText").className = "showing"; 
+        document.querySelector("body").className = "fishBackground";               
     });
 
 /* Item 02 */
-    document.getElementById("second").addEventListener("mouseover", function(event){         //click on shirt image, overlay changes from hidden to showing
+/*     document.getElementById("second").addEventListener("mouseover", function(event){        
         event.preventDefault();
         document.getElementById("fossilText").className = "showing";                   
     });
 
-    document.getElementById("second").addEventListener("mouseleave", function(event){         //click on shirt image, overlay changes from hidden to showing
+    document.getElementById("second").addEventListener("mouseleave", function(event){         
         event.preventDefault();
         document.getElementById("fossilText").className = "hidden";                   
-    });
+    }); */
 
     document.getElementById("second").addEventListener("click", function(event){         //click on shirt image, overlay changes from hidden to showing
         event.preventDefault();
-        document.getElementById("video2").className = "showing";                   
+        document.getElementById("fossilText").className = "showing"; 
+        document.querySelector("body").className = "fossilBackground";                  
     });
 
 /* Item 03 */
-document.getElementById("third").addEventListener("mouseover", function(event){         //click on shirt image, overlay changes from hidden to showing
+/* document.getElementById("third").addEventListener("mouseover", function(event){         //click on shirt image, overlay changes from hidden to showing
     event.preventDefault();
     document.getElementById("candyText").className = "showing";                   
 });
@@ -44,15 +46,16 @@ document.getElementById("third").addEventListener("mouseover", function(event){ 
 document.getElementById("third").addEventListener("mouseleave", function(event){         //click on shirt image, overlay changes from hidden to showing
     event.preventDefault();
     document.getElementById("candyText").className = "hidden";                   
-});
+}); */
 
 document.getElementById("third").addEventListener("click", function(event){         //click on shirt image, overlay changes from hidden to showing
     event.preventDefault();
-    document.getElementById("video3").className = "showing";                   
+    document.getElementById("candyText").className = "showing"; 
+    document.querySelector("body").className = "candyBackground";                  
 });
 
 /* Item 04 */
-document.getElementById("fourth").addEventListener("mouseover", function(event){         //click on shirt image, overlay changes from hidden to showing
+/* document.getElementById("fourth").addEventListener("mouseover", function(event){         //click on shirt image, overlay changes from hidden to showing
     event.preventDefault();
     document.getElementById("popText").className = "showing";                   
 });
@@ -60,11 +63,12 @@ document.getElementById("fourth").addEventListener("mouseover", function(event){
 document.getElementById("fourth").addEventListener("mouseleave", function(event){         //click on shirt image, overlay changes from hidden to showing
     event.preventDefault();
     document.getElementById("popText").className = "hidden";                   
-});
+}); */
 
 document.getElementById("fourth").addEventListener("click", function(event){         //click on shirt image, overlay changes from hidden to showing
     event.preventDefault();
-    document.getElementById("video4").className = "showing";                   
+    document.getElementById("popText").className = "showing"; 
+    document.querySelector("body").className = "popBackground";                  
 });
 
 
