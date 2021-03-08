@@ -5,16 +5,6 @@
 
     /* Item 01 */
 
-/*     document.getElementById("first").addEventListener("mouseover", function(event){         
-        event.preventDefault();
-        document.getElementById("fishText").className = "showing";                   
-    });
-
-    document.getElementById("first").addEventListener("mouseleave", function(event){         
-        event.preventDefault();
-        document.getElementById("fishText").className = "hidden";                   
-    }); */
-
     document.getElementById("first").addEventListener("click", function(event){         
         event.preventDefault();
         document.getElementById("fishText").className = "showing"; 
@@ -61,20 +51,61 @@ document.getElementById("fourth").addEventListener("click", function(event){    
 
 /* BUTTONS /////////////////////////// */
 
-document.querySelector("#popText button").addEventListener("click", function(event){         
+document.querySelector("#fishInfo button").addEventListener("click", function(event){         
     event.preventDefault();
-    document.querySelector("#popInfo").className = "showing";                 
+    document.querySelector("#one").className = "hidden";
+    document.querySelector("#fishText").className = "showing"; 
+                   
 });
 
-document.querySelector(".overlays button").addEventListener("click", function(event){         
+document.querySelector("#fossilInfo button").addEventListener("click", function(event){         
     event.preventDefault();
-    document.querySelector(".overlays").className = "hidden";                 
+    document.querySelector("#two").className = "hidden";
+    document.querySelector("#fossilText").className = "showing";
+                     
+});
+
+document.querySelector("#candyInfo button").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#three").className = "hidden";
+    document.querySelector("#candyText").className = "showing"; 
+                    
+});
+
+document.querySelector("#popInfo button").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#four").className = "hidden";
+    document.querySelector("#popText").className = "showing";
 });
 
 
+document.querySelector("#fishButton").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#one").className = "showing";
+    document.querySelector("#fishText").className = "hidden";
+                     
+});
 
+document.querySelector("#fossilButton").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#two").className = "showing";
+    document.querySelector("#fossilText").className = "hidden";
+                     
+});
 
+document.querySelector("#candyButton").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#three").className = "showing";
+    document.querySelector("#candyText").className = "hidden";
+                     
+});
 
+document.querySelector("#popButton").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#four").className = "showing";
+    document.querySelector("#popText").className = "hidden";
+                     
+});
 
 /* SlideSHowssssssss */
 
