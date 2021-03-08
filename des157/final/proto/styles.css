@@ -57,7 +57,7 @@ button:hover{
 #shirts article{
     display: flex;
     flex-wrap: wrap;
-    color: black;
+    color: white;
 }
 
 #shirts div{
@@ -65,7 +65,7 @@ button:hover{
     margin-left: 0;
     width: 350px;
     height: 640px;
-    color: black;
+    color: white;
     position: relative;  
 }
 
@@ -187,71 +187,3 @@ video {
     background-color: rgb(255, 177, 177);
 }
 
-.overlays img{
-    padding-top: 45px;
-    padding-left: 40px;
-    height: 500px;
-    width: 500px;
-    overflow: hidden;
-}
-
-.overlays p{
-    width: 40%;
-    padding: 35px;
-}
-
-#fishInfo{
-    display: flex;
-    flex-direction: row;
-    width: 1100px;
-    background-color: white;
-    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
-    height: 600px;
-    position: absolute;
-    top: 1180px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
-
-#fossilInfo{
-    display: flex;
-    flex-direction: row;
-    width: 1100px;
-    background-color: white;
-    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
-    height: 600px;
-    position: absolute;
-    top: 1900px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
-
-#candyInfo{
-    display: flex;
-    flex-direction: row;
-    width: 1100px;
-    background-color: white;
-    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
-    height: 600px;
-    position: absolute;
-    top: 2660px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
-
-#popInfo{
-    display: flex;
-    flex-direction: row;
-    width: 1100px;
-    background-color: white;
-    box-shadow: 0px 0px 80px 1px rgba(0,0,0,0.75);
-    height: 600px;
-    position: absolute;
-    top: 3350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-}
