@@ -2,7 +2,13 @@
     'use strict';
     console.log("reading");
 
-let icon = document.querySelector("header p")
+    alert("Hello, during this test you will be asked to complete four tasks");
+    alert("1) Get from the opening message to the t-shirt designs.");
+    alert("2) Choose a design.");
+    alert("3) Find out more information about the design, and close out of that information.");
+    alert("4) Choose a different design. Good Luck!");
+
+    let icon = document.querySelector("header p");
     /* Item 01 */
 
     document.getElementById("first").addEventListener("click", function(event){         
