@@ -13,8 +13,6 @@ header{
 /* First page/Title page */
 
 #top{
-/*     width: height;
-    height: 820px; */
     height: 100vh;
 }
 
@@ -31,12 +29,16 @@ h1{
 }
 
 h2{
-    font-size: 45px;
+    font-size: 40px;
     width: 400px;
+    border-bottom: 2px solid black;
 }
 
 button{
     outline: none;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 8px 8px rgb(255, 177, 177);
 }
 
 #top button{
@@ -44,22 +46,18 @@ button{
     background-color: white;
     font-size: 30px;
     padding: 10px;
-    border: 2px solid black;
-    box-shadow: 8px 8px rgb(255, 177, 177);
 }
 
-#top button:hover{
+button:hover{
     color: rgb(255, 177, 177);
     box-shadow: 12px 15px rgb(255, 177, 177);
 }
 /* First page ^^^^^^^^^^^ */
 
 
-
 #shirts article{
     display: flex;
     flex-wrap: wrap;
-    cursor: pointer;
     color: black;
 }
 
@@ -68,8 +66,6 @@ button{
     width: 500px;
     height: 640px;
     color: black;
-/*     border: 2px white solid;
-    border-radius: 25px; */
     
 }
 
@@ -77,26 +73,28 @@ button{
     background-color: white;
     font-size: 30px;
     padding: 10px;
-    border: 2px solid black;
-    box-shadow: 8px 8px rgb(255, 177, 177);
     position: absolute;
     right: 200px;
 }
 
 #first:hover{
     filter: drop-shadow( 0px 5px 30px white);
+    cursor: pointer;
 }
 
 #second:hover{
     filter: drop-shadow( 0px 5px 30px white);
+    cursor: pointer;
 }
 
 #third:hover{
     filter: drop-shadow( 0px 5px 30px white);
+    cursor: pointer;
 }
 
 #fourth:hover{
     filter: drop-shadow( 0px 5px 30px white);
+    cursor: pointer;
 }
 
 
@@ -159,4 +157,48 @@ footer a:hover{
     color: white;
     transition-property: background-color;
     transition-duration: .75s;
+}
+
+video {
+    outline: none;
+
+}
+
+.overlays{
+    color: black;
+}
+
+.overlays button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.overlays img{
+    padding-top: 45px;
+    padding-left: 40px;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.overlays p{
+    width: 40%;
+    padding: 35px;
+}
+
+#popInfo{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    background-color: white;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
