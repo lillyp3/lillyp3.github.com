@@ -61,20 +61,80 @@ document.getElementById("fourth").addEventListener("click", function(event){    
 
 /* BUTTONS /////////////////////////// */
 
+document.querySelector("#popText button").addEventListener("click", function(event){         
+    event.preventDefault();
+    document.querySelector("#popInfo").className = "showing";                 
+});
+
 document.querySelector(".overlays button").addEventListener("click", function(event){         
     event.preventDefault();
     document.querySelector(".overlays").className = "hidden";                 
 });
 
-document.getElementById("#popButton").addEventListener("click", function(event){         
-    event.preventDefault();
-    document.querySelector("#popInfo").className = "showing";                 
-});
+
 
 
 
 
 /* SlideSHowssssssss */
+
+let currentImage1 = 0;
+const fishPics = [
+    "fish1.jpg",
+    "fish2.jpg",
+    "fish3.jpg"
+];
+
+const fishSlide = document.getElementById("fishImages");
+setInterval(function (){
+    currentImage1++;
+    
+    if (currentImage1 > fishPics.length-1){
+        currentImage1 = 0;
+    }
+    
+    fishSlide.src = `images/${fishPics[currentImage1]}`;}, 2000);
+
+
+
+let currentImage2 = 0;
+const fossilPics = [
+    "fossil1.jpg",
+    "fossil2.jpg",
+    "fossil3.jpg"
+];
+
+const fossilSlide = document.getElementById("fossilImages");
+setInterval(function (){
+    currentImage2++;
+    
+    if (currentImage2 > fossilPics.length-1){
+        currentImage2 = 0;
+    }
+    
+    fossilSlide.src = `images/${fossilPics[currentImage2]}`;}, 2000);
+
+
+
+let currentImage3 = 0;
+const heartPics = [
+    "Hearts1.jpg",
+    "Hearts2.jpg",
+    "Hearts3.jpg"
+];
+
+const heartSlide = document.getElementById("heartImages");
+setInterval(function (){
+    currentImage3++;
+    
+    if (currentImage3 > PopPics.length-1){
+        currentImage3 = 0;
+    }
+    
+    heartSlide.src = `images/${heartPics[currentImage3]}`;}, 2000);
+
+
+
 let currentImage4 = 0;
 const PopPics = [
     "pop1.jpg",

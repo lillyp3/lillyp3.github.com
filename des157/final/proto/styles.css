@@ -1,6 +1,5 @@
 body {
     background-color: rgb(0, 0, 0);
-    /* background-image: url("images/background.jpg"); */
     font-family: 'Krona One', sans-serif;
     color: white;
 }
@@ -176,6 +175,11 @@ video {
     background-color: white;
     border-radius: 30px;
     font-size: 18px;
+    box-shadow: none;
+}
+
+.overlays button:hover {
+    background-color: rgb(255, 177, 177);
 }
 
 .overlays img{
@@ -191,6 +195,45 @@ video {
     padding: 35px;
 }
 
+#fishInfo{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    background-color: white;
+    height: 600px;
+    position: absolute;
+    top: 1300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#fossilInfo{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    background-color: white;
+    height: 600px;
+    position: absolute;
+    top: 2250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#candyInfo{
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    background-color: white;
+    height: 600px;
+    position: absolute;
+    top: 3200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
 #popInfo{
     display: flex;
     flex-direction: row;
@@ -198,6 +241,7 @@ video {
     background-color: white;
     height: 600px;
     position: absolute;
+    top: 4050px;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
