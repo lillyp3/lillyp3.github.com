@@ -29,7 +29,7 @@ h1{
 }
 
 h2{
-    font-size: 40px;
+    font-size: 35px;
     width: 450px;
     padding-bottom: 10px;
     border-bottom: 3px solid black;
@@ -39,7 +39,6 @@ button{
     outline: none;
     cursor: pointer;
     border: 2px solid black;
-    box-shadow: 8px 8px rgb(255, 177, 177);
 }
 
 #top button{
@@ -47,12 +46,56 @@ button{
     background-color: white;
     font-size: 30px;
     padding: 10px;
+    border: 2px solid black;
+    box-shadow: 8px 8px rgb(255, 177, 177);
 }
 
-button:hover{
+#top button:hover{
     color: rgb(255, 177, 177);
     box-shadow: 12px 15px rgb(255, 177, 177);
 }
+
+#fishButton{
+    box-shadow: 8px 10px rgb(55, 90, 72);
+}
+
+#fishButton:hover {
+    color: rgb(55, 90, 72);
+    box-shadow: 12px 15px rgb(55, 90, 72);
+    font-weight: 600;
+}
+
+#fossilButton{
+    box-shadow: 8px 10px rgb(204, 124, 128);
+}
+
+#fossilButton:hover {
+    color: rgb(204, 124, 128);
+    box-shadow: 12px 15px rgb(204, 124, 128);
+    font-weight: 600;
+}
+
+#candyButton{
+    box-shadow: 8px 10px rgb(247, 196, 88);
+}
+
+#candyButton:hover {
+    color: rgb(247, 196, 88);
+    box-shadow: 12px 15px rgb(247, 196, 88);
+    font-weight: 600;
+}
+
+#popButton{
+    box-shadow: 8px 10px rgb(123, 165, 219);
+}
+
+#popButton:hover {
+    color: rgb(123, 165, 219);
+    box-shadow: 12px 15px rgb(123, 165, 219);
+    font-weight: 600;
+}
+
+
 /* First page ^^^^^^^^^^^ */
 
 #shirts article{
@@ -77,7 +120,7 @@ button:hover{
     padding: 10px;
     width: 300px;
     position: absolute;
-   
+    left: 24%;
 }
 
 #first:hover{
@@ -129,33 +172,25 @@ footer a:hover{
 }
 
 .fishBackground{
-    background-color: rgba(36, 70, 53, 0.699);
-    font-family: 'Krona One', sans-serif;
-    color: white;
+    background-color: rgba(36, 70, 53, 0.575);
     transition-property: background-color;
     transition-duration: .75s;
 }
 
 .fossilBackground{
     background-color: rgba(247, 195, 204, 0.699);
-    font-family: 'Krona One', sans-serif;
-    color: white;
     transition-property: background-color;
     transition-duration: .75s;
 }
 
 .candyBackground{
-    background-color: rgba(255, 214, 126, 0.699);
-    font-family: 'Krona One', sans-serif;
-    color: white;
+    background-color: rgba(247, 197, 88, 0.521);
     transition-property: background-color;
     transition-duration: .75s;
 }
 
 .popBackground{
     background-color: rgba(126, 163, 231, 0.699);
-    font-family: 'Krona One', sans-serif;
-    color: white;
     transition-property: background-color;
     transition-duration: .75s;
 }
@@ -168,7 +203,7 @@ video {
 }
 
 #fishText video {
-    border: 10px solid rgba(19, 39, 29, 0.753);
+    border: 10px solid rgb(55, 90, 72);
     box-shadow: 0px 0px 60px 1px rgb(6, 14, 10);
 }
 
@@ -178,7 +213,7 @@ video {
 }
 
 #candyText video {
-    border: 10px solid rgb(252, 216, 140);
+    border: 10px solid rgb(247, 196, 88);
     box-shadow: 0px 0px 60px 1px rgba(121, 89, 31, 0.849);
 }
 
