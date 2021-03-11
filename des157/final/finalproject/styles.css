@@ -27,6 +27,7 @@ header{
 h1{
     font-size: 70px;
 }
+/* ////////////////////////// */
 
 h2{
     font-size: 35px;
@@ -35,13 +36,14 @@ h2{
     border-bottom: 3px solid black;
 }
 
+/* Buttons /////////////////// */
 button{
     outline: none;
     cursor: pointer;
     border: 2px solid black;
 }
 
-#top button{
+#top button{                        /* start button */
     margin-top: 60px;
     background-color: white;
     font-size: 30px;
@@ -55,7 +57,7 @@ button{
     box-shadow: 12px 15px rgb(255, 177, 177);
 }
 
-#fishButton{
+#fishButton{                                        /* each individual design's about button */
     box-shadow: 8px 10px rgb(55, 90, 72);
 }
 
@@ -96,13 +98,12 @@ button{
 }
 
 
-/* First page ^^^^^^^^^^^ */
+/* Main design flex boxes ////////////////////////// */
 
 #shirts article{
     display: flex;
     flex-direction: row;
     color: black;
-
 }
 
 #shirts div{
@@ -142,7 +143,7 @@ button{
     filter: drop-shadow( 0px 5px 30px white);
     cursor: pointer;
 }
-
+/* //////////////////////////////////////////// */
 
 .hidden {
     display: none;                  /* when marked as hidden, div is not displayed on screen */
@@ -151,6 +152,8 @@ button{
 .showing {
     display: block;                 /* when marked as showing, display block will put element on the screen */
 }
+
+/* Footer ///////////////////////////////*/
 
 footer {
     display: flex;
@@ -171,10 +174,11 @@ footer a:hover{
     color: rgb(165,251,235);
 }
 
+/* Background Color Changes /////////////////////////////// */
 .fishBackground{
     background-color: rgba(36, 70, 53, 0.575);
     transition-property: background-color;
-    transition-duration: .75s;
+    transition-duration: .75s;                          /* colors changes for a duration of .75 seconds */
 }
 
 .fossilBackground{
@@ -195,11 +199,11 @@ footer a:hover{
     transition-duration: .75s;
 }
 
+/* Design videos /////////////////////////////// */
 video {
     outline: none;
     border-radius: 30px;
     margin-left: 24px;
-
 }
 
 #fishText video {
@@ -222,6 +226,7 @@ video {
     box-shadow: 0px 0px 60px 1px rgba(37, 46, 90, 0.75);
 }
 
+/* Informational Overlays /////////////////////////////// */
 .overlays{
     color: black;
 }
@@ -257,7 +262,6 @@ video {
 
 #fishInfo{
     display: flex;
-    /* flex-direction: row; */
     flex-wrap: wrap;
     width: 1100px;
     background-color: white;
@@ -266,7 +270,7 @@ video {
     position: absolute;
     top: 1200px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);   /* centers the content */
     border-radius: 10px;
 }
 
@@ -311,10 +315,9 @@ video {
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
+/* ////////////////////////////////////////////////////////////// */
 
-
-/* Color palettes */
-
+/* Color palettes ///////////////////////////////*/
 #fcolors {
     width: 282px;
     height: 25px;

@@ -7,9 +7,9 @@
 /* Item 01 */
     document.getElementById("first").addEventListener("click", function(event){         /* click on the t-shirt */ 
         event.preventDefault();
-        document.getElementById("fishText").className = "showing";                      /* div that holds video, title, about button, and colors is now displayed on screen */
+        document.getElementById("fishText").className = "showing";                      /* div that holds video, title, and "about" button  is now displayed on screen */
         document.querySelector("body").className = "fishBackground";                    /* background color changes */
-        document.getElementById("fossilText").className = "hidden";                     /* keeps other design information hidden and videos aren't playing to slow down page */        
+        document.getElementById("fossilText").className = "hidden";                     /* keeps other design information hidden */        
         document.getElementById("candyText").className = "hidden";    
         document.getElementById("popText").className = "hidden";  
         icon.innerHTML = '<img src="images/Fish.png">';                                 /* upper right icon changes */
@@ -53,7 +53,7 @@
     document.querySelector("#fishInfo button").addEventListener("click", function(event){              /* click on upper right "x" button */  
         event.preventDefault();
         document.querySelector("#one").className = "hidden";                                            /* overlay is no longer visible */
-        document.querySelector("#fishText").className = "showing";                                      /* video. title, and button is visible */
+        document.querySelector("#fishText").className = "showing";                                      /* video, title, and button is visible */
                     
     });
 
@@ -126,7 +126,7 @@
         fishSlide.src = `images/${fishPics[currentImage1]}`;}, 2000);       /* change the photo every 2 seconds */
 
 
-/* fish slideshow */
+/* fossil slideshow */
     let currentImage2 = 0;                                          
     const fossilPics = [
         "fossil1.jpg",
