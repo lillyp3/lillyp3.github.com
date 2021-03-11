@@ -12,6 +12,7 @@
         document.getElementById("fossilText").className = "hidden";                     /* keeps other design information hidden */        
         document.getElementById("candyText").className = "hidden";    
         document.getElementById("popText").className = "hidden";  
+        document.querySelector("#top button").className = "hidden";
         icon.innerHTML = '<img src="images/Fish.png">';                                 /* upper right icon changes */
     });
 
@@ -23,6 +24,7 @@
         document.getElementById("fishText").className = "hidden"; 
         document.getElementById("candyText").className = "hidden";    
         document.getElementById("popText").className = "hidden"; 
+        document.querySelector("#top button").className = "hidden";
         icon.innerHTML = '<img src="images/Fossil.png">';           
     });
 
@@ -32,7 +34,8 @@
         document.querySelector("body").className = "candyBackground"; 
         document.getElementById("fishText").className = "hidden"; 
         document.getElementById("fossilText").className = "hidden";    
-        document.getElementById("popText").className = "hidden";  
+        document.getElementById("popText").className = "hidden";
+        document.querySelector("#top button").className = "hidden";  
         icon.innerHTML = '<img src="images/hearts.png">';                
     });
 
@@ -44,6 +47,7 @@
         document.getElementById("fishText").className = "hidden"; 
         document.getElementById("candyText").className = "hidden";    
         document.getElementById("fossilText").className = "hidden";
+        document.querySelector("#top button").className = "hidden";
         icon.innerHTML = '<img src="images/Lollipop.png">';                 
     });
 
@@ -75,6 +79,7 @@
         event.preventDefault();
         document.querySelector("#four").className = "hidden";
         document.querySelector("#popText").className = "showing";
+        
     });
 /* ////////////////////////////////////////////////////////////////////////////////////// */
 
